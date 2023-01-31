@@ -8,7 +8,6 @@
 #include "Sprite.hpp"
 #include "Text.hpp"
 #include "EventManager.hpp"
-#include "../ecs/Coordinator.hpp"
 
 namespace SFML {
     class Window {
@@ -40,12 +39,11 @@ namespace SFML {
         void drawText(const std::shared_ptr<Text> &text) {
             window.draw(text->getText());
         }
-        void clearEventQueue(ECS::Coordinator &coordinator) {
-            auto event_manager = coordinator.getResource<SFML::EventManager>();
-            sf::Event event;
-            while (window.pollEvent(event)) {
-                event_manager->newEvent(event);
-            }
+        bool pollEvent(SFML::Event &event) {
+            sf::Event polled_event;
+            bool empty = window.pollEvent(polled_event);
+            event.setEvent(polled_event);
+            return (empty);
         }
         const sf::RenderWindow &getWindow() const {
             return (window);
