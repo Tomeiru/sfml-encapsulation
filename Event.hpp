@@ -106,44 +106,47 @@ namespace SFML {
             std::uint32_t button;
         };
 
-        Event(const sf::Event &event) : event(event) {};
+        Event(const sf::Event &event) : _event(event) {};
         EventType getEventType() const {
-            return ((EventType)event.type);
+            return ((EventType)_event.type);
         }
         const sf::Event &getEvent() const {
-            return (event);
+            return (_event);
+        }
+        void setEvent(sf::Event event) {
+            _event = event;
         }
         SizeEvent getSizeEvent() const {
-            return (event.size);
+            return (_event.size);
         }
         KeyEvent getKeyEvent() const {
-            return (event.key);
+            return (_event.key);
         }
         TextEvent getTextEvent() const {
-            return (event.text);
+            return (_event.text);
         }
         MouseMoveEvent getMouseMoveEvent() const {
-            return (event.mouseMove);
+            return (_event.mouseMove);
         }
         MouseButtonEvent getMouseButtonEvent() const {
-            return (event.mouseButton);
+            return (_event.mouseButton);
         }
         MouseWheelEvent getMouseWheelEvent() const {
-            return (event.mouseWheel);
+            return (_event.mouseWheel);
         }
         MouseWheelScrollEvent getMouseWheelScrollEvent() const {
-            return (event.mouseWheelScroll);
+            return (_event.mouseWheelScroll);
         }
         JoystickConnectEvent getJoystickConnectEvent() const {
-            return (event.joystickConnect);
+            return (_event.joystickConnect);
         }
         JoystickMoveEvent getJoystickMoveEvent() const {
-            return (event.joystickMove);
+            return (_event.joystickMove);
         }
         JoystickButtonEvent getJoystickButtonEvent() const {
-            return (event.joystickButton);
+            return (_event.joystickButton);
         }
     private:
-        sf::Event event;
+        sf::Event _event;
     };
 }
