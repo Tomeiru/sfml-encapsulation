@@ -3,8 +3,14 @@
 #include <SFML/Window/Keyboard.hpp>
 
 namespace SFML {
+    /**
+     * @brief A encapsulation of sf::Keyboard
+     */
     class Keyboard {
     public:
+        /**
+         * @brief Keyboard key codes
+         */
         enum Key {
             Unknown = sf::Keyboard::Unknown,
             A = sf::Keyboard::A,
@@ -115,9 +121,18 @@ namespace SFML {
             SemiColon = sf::Keyboard::SemiColon,
             Return = sf::Keyboard::Return
         };
+        /**
+         * @brief Check if a key is pressed
+         * @param key Key to check
+         * @return True if the key is pressed, false otherwise
+         */
         static bool isKeyPressed(Key key) {
             return sf::Keyboard::isKeyPressed((sf::Keyboard::Key)key);
         }
+        /**
+         * @brief Show or hide the virtual keyboard
+         * @param visible True to show, false to hide
+         */
         static void setVirtualKeyboardVisible(bool visible) {
             sf::Keyboard::setVirtualKeyboardVisible(visible);
         }
