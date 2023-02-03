@@ -1,11 +1,7 @@
 var searchData=
 [
-  ['sfml_2dencapsulation_0',['sfml-encapsulation',['../index.html',1,'']]],
-  ['sizeevent_1',['SizeEvent',['../struct_s_f_m_l_1_1_event_1_1_size_event.html',1,'SFML::Event']]],
-  ['sound_2',['Sound',['../class_s_f_m_l_1_1_sound.html',1,'SFML']]],
-  ['soundbuffer_3',['SoundBuffer',['../class_s_f_m_l_1_1_sound_buffer.html',1,'SFML']]],
-  ['soundbuffermanager_4',['SoundBufferManager',['../class_s_f_m_l_1_1_sound_buffer_manager.html',1,'SFML']]],
-  ['soundmanager_5',['SoundManager',['../class_s_f_m_l_1_1_sound_manager.html',1,'SFML']]],
-  ['sprite_6',['Sprite',['../class_s_f_m_l_1_1_sprite.html',1,'SFML']]],
-  ['spritemanager_7',['SpriteManager',['../class_s_f_m_l_1_1_sprite_manager.html',1,'SFML']]]
+  ['joystick_0',['Joystick',['../class_s_f_m_l_1_1_joystick.html',1,'SFML']]],
+  ['joystickbuttonevent_1',['JoystickButtonEvent',['../struct_s_f_m_l_1_1_event_1_1_joystick_button_event.html#aea997a2efa23677f44421734c846b2ff',1,'SFML::Event::JoystickButtonEvent::JoystickButtonEvent()'],['../struct_s_f_m_l_1_1_event_1_1_joystick_button_event.html',1,'SFML::Event::JoystickButtonEvent']]],
+  ['joystickconnectevent_2',['JoystickConnectEvent',['../struct_s_f_m_l_1_1_event_1_1_joystick_connect_event.html#af8227ee6fd885ef9e06c82e078affe31',1,'SFML::Event::JoystickConnectEvent::JoystickConnectEvent()'],['../struct_s_f_m_l_1_1_event_1_1_joystick_connect_event.html',1,'SFML::Event::JoystickConnectEvent']]],
+  ['joystickmoveevent_3',['JoystickMoveEvent',['../struct_s_f_m_l_1_1_event_1_1_joystick_move_event.html#ae90d3063439393bd7f5e86adf9019c9c',1,'SFML::Event::JoystickMoveEvent::JoystickMoveEvent()'],['../struct_s_f_m_l_1_1_event_1_1_joystick_move_event.html',1,'SFML::Event::JoystickMoveEvent']]]
 ];

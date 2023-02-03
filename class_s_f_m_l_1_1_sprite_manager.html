@@ -79,16 +79,104 @@ $(function() {
   <div class="headertitle"><div class="title">SFML::SpriteManager Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A manager for sprites.  
+ <a href="class_s_f_m_l_1_1_sprite_manager.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_sprite_manager_8hpp_source.html">SpriteManager.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aeae38dd40f2b508ca2e6629a6d0b12f5"><td class="memItemLeft" align="right" valign="top"><a id="aeae38dd40f2b508ca2e6629a6d0b12f5" name="aeae38dd40f2b508ca2e6629a6d0b12f5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>registerSprite</b> (const std::string &amp;id, const std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_texture.html">Texture</a> &gt; &amp;texture)</td></tr>
+<tr class="memitem:aeae38dd40f2b508ca2e6629a6d0b12f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_sprite_manager.html#aeae38dd40f2b508ca2e6629a6d0b12f5">registerSprite</a> (const std::string &amp;id, const std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_texture.html">Texture</a> &gt; &amp;texture)</td></tr>
+<tr class="memdesc:aeae38dd40f2b508ca2e6629a6d0b12f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a sprite.  <br /></td></tr>
 <tr class="separator:aeae38dd40f2b508ca2e6629a6d0b12f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada46eca08ce7f2511b72ffce0c1c1c53"><td class="memItemLeft" align="right" valign="top"><a id="ada46eca08ce7f2511b72ffce0c1c1c53" name="ada46eca08ce7f2511b72ffce0c1c1c53"></a>
-std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_sprite.html">Sprite</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getSprite</b> (const std::string &amp;id)</td></tr>
+<tr class="memitem:ada46eca08ce7f2511b72ffce0c1c1c53"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_sprite.html">Sprite</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_sprite_manager.html#ada46eca08ce7f2511b72ffce0c1c1c53">getSprite</a> (const std::string &amp;id)</td></tr>
+<tr class="memdesc:ada46eca08ce7f2511b72ffce0c1c1c53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a sprite.  <br /></td></tr>
 <tr class="separator:ada46eca08ce7f2511b72ffce0c1c1c53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A manager for sprites. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ada46eca08ce7f2511b72ffce0c1c1c53" name="ada46eca08ce7f2511b72ffce0c1c1c53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada46eca08ce7f2511b72ffce0c1c1c53">&#9670;&#160;</a></span>getSprite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_sprite.html">Sprite</a> &gt; SFML::SpriteManager::getSprite </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a sprite. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The ID of the sprite </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;Sprite&gt; The sprite </dd></dl>
+
+</div>
+</div>
+<a id="aeae38dd40f2b508ca2e6629a6d0b12f5" name="aeae38dd40f2b508ca2e6629a6d0b12f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeae38dd40f2b508ca2e6629a6d0b12f5">&#9670;&#160;</a></span>registerSprite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SFML::SpriteManager::registerSprite </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_texture.html">Texture</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>texture</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Register a sprite. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The ID of the sprite </td></tr>
+    <tr><td class="paramname">texture</td><td>The texture of the sprite </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_sprite_manager_8hpp_source.html">SpriteManager.hpp</a></li>
 </ul>

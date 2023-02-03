@@ -80,10 +80,15 @@ $(function() {
   <div class="headertitle"><div class="title">SFML::UDPSocket Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A encapsulation of sf::UdpSocket.  
+ <a href="class_s_f_m_l_1_1_u_d_p_socket.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_u_d_p_socket_8hpp_source.html">UDPSocket.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a6b0c51e1373f6644e4146414eb5fc98b"><td class="memItemLeft" align="right" valign="top"><a id="a6b0c51e1373f6644e4146414eb5fc98b" name="a6b0c51e1373f6644e4146414eb5fc98b"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Status</b> { <br />
+<tr class="memitem:a6b0c51e1373f6644e4146414eb5fc98b"><td class="memItemLeft" align="right" valign="top"><a id="a6b0c51e1373f6644e4146414eb5fc98b" name="a6b0c51e1373f6644e4146414eb5fc98b"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_u_d_p_socket.html#a6b0c51e1373f6644e4146414eb5fc98b">Status</a> { <br />
 &#160;&#160;<b>Done</b> = sf::UdpSocket::Done
 , <b>NotReady</b> = sf::UdpSocket::NotReady
 , <b>Partial</b> = sf::UdpSocket::Partial
@@ -92,26 +97,242 @@ Public Types</h2></td></tr>
 &#160;&#160;<b>Error</b> = sf::UdpSocket::Error
 <br />
  }</td></tr>
+<tr class="memdesc:a6b0c51e1373f6644e4146414eb5fc98b"><td class="mdescLeft">&#160;</td><td class="mdescRight">UdpSocket status enumeration. <br /></td></tr>
 <tr class="separator:a6b0c51e1373f6644e4146414eb5fc98b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a68d118b02a5c232ee08266348ba1ed38"><td class="memItemLeft" align="right" valign="top"><a id="a68d118b02a5c232ee08266348ba1ed38" name="a68d118b02a5c232ee08266348ba1ed38"></a>
-Status&#160;</td><td class="memItemRight" valign="bottom"><b>bind</b> (std::uint32_t port, const <a class="el" href="class_s_f_m_l_1_1_ip_address.html">IpAddress</a> &amp;address=IpAddress::any())</td></tr>
+<tr class="memitem:a482ceb33ce4331feb04015afbd30f0af"><td class="memItemLeft" align="right" valign="top"><a id="a482ceb33ce4331feb04015afbd30f0af" name="a482ceb33ce4331feb04015afbd30f0af"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>UDPSocket</b> ()</td></tr>
+<tr class="memdesc:a482ceb33ce4331feb04015afbd30f0af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="class_s_f_m_l_1_1_u_d_p_socket.html" title="A encapsulation of sf::UdpSocket.">UDPSocket</a> object. <br /></td></tr>
+<tr class="separator:a482ceb33ce4331feb04015afbd30f0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68d118b02a5c232ee08266348ba1ed38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_f_m_l_1_1_u_d_p_socket.html#a6b0c51e1373f6644e4146414eb5fc98b">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_u_d_p_socket.html#a68d118b02a5c232ee08266348ba1ed38">bind</a> (std::uint32_t port, const <a class="el" href="class_s_f_m_l_1_1_ip_address.html">IpAddress</a> &amp;address=<a class="el" href="class_s_f_m_l_1_1_ip_address.html#af5a84f95d0f15975ba7b7d0b5c1b2d09">IpAddress::any</a>())</td></tr>
+<tr class="memdesc:a68d118b02a5c232ee08266348ba1ed38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind the socket to a specific port and address.  <br /></td></tr>
 <tr class="separator:a68d118b02a5c232ee08266348ba1ed38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a370fe7ec387a30e166b9314753d8b758"><td class="memItemLeft" align="right" valign="top"><a id="a370fe7ec387a30e166b9314753d8b758" name="a370fe7ec387a30e166b9314753d8b758"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>unbind</b> ()</td></tr>
+<tr class="memdesc:a370fe7ec387a30e166b9314753d8b758"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unbind the socket. <br /></td></tr>
 <tr class="separator:a370fe7ec387a30e166b9314753d8b758"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86c745cf2942bbe8a8cd95f3f28a37b3"><td class="memItemLeft" align="right" valign="top"><a id="a86c745cf2942bbe8a8cd95f3f28a37b3" name="a86c745cf2942bbe8a8cd95f3f28a37b3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setBlocking</b> (bool blocking)</td></tr>
+<tr class="memitem:a86c745cf2942bbe8a8cd95f3f28a37b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_u_d_p_socket.html#a86c745cf2942bbe8a8cd95f3f28a37b3">setBlocking</a> (bool blocking)</td></tr>
+<tr class="memdesc:a86c745cf2942bbe8a8cd95f3f28a37b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the blocking state of the socket.  <br /></td></tr>
 <tr class="separator:a86c745cf2942bbe8a8cd95f3f28a37b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd9405f89273be615fed287c6b17232b"><td class="memItemLeft" align="right" valign="top"><a id="afd9405f89273be615fed287c6b17232b" name="afd9405f89273be615fed287c6b17232b"></a>
-Status&#160;</td><td class="memItemRight" valign="bottom"><b>send</b> (const void *data, std::size_t size, const <a class="el" href="class_s_f_m_l_1_1_ip_address.html">IpAddress</a> &amp;address, uint16_t port)</td></tr>
+<tr class="memitem:afd9405f89273be615fed287c6b17232b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_f_m_l_1_1_u_d_p_socket.html#a6b0c51e1373f6644e4146414eb5fc98b">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_u_d_p_socket.html#afd9405f89273be615fed287c6b17232b">send</a> (const void *data, std::size_t size, const <a class="el" href="class_s_f_m_l_1_1_ip_address.html">IpAddress</a> &amp;address, uint16_t port)</td></tr>
+<tr class="memdesc:afd9405f89273be615fed287c6b17232b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send data to a specific address and port.  <br /></td></tr>
 <tr class="separator:afd9405f89273be615fed287c6b17232b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd8382423984d0efe1f355930b5034f1"><td class="memItemLeft" align="right" valign="top"><a id="acd8382423984d0efe1f355930b5034f1" name="acd8382423984d0efe1f355930b5034f1"></a>
-Status&#160;</td><td class="memItemRight" valign="bottom"><b>receive</b> (void *data, std::size_t size, std::size_t &amp;received, <a class="el" href="class_s_f_m_l_1_1_ip_address.html">IpAddress</a> &amp;address, uint16_t &amp;port)</td></tr>
+<tr class="memitem:acd8382423984d0efe1f355930b5034f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_f_m_l_1_1_u_d_p_socket.html#a6b0c51e1373f6644e4146414eb5fc98b">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_u_d_p_socket.html#acd8382423984d0efe1f355930b5034f1">receive</a> (void *data, std::size_t size, std::size_t &amp;received, <a class="el" href="class_s_f_m_l_1_1_ip_address.html">IpAddress</a> &amp;address, uint16_t &amp;port)</td></tr>
+<tr class="memdesc:acd8382423984d0efe1f355930b5034f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive data from a specific address and port.  <br /></td></tr>
 <tr class="separator:acd8382423984d0efe1f355930b5034f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A encapsulation of sf::UdpSocket. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a68d118b02a5c232ee08266348ba1ed38" name="a68d118b02a5c232ee08266348ba1ed38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68d118b02a5c232ee08266348ba1ed38">&#9670;&#160;</a></span>bind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_f_m_l_1_1_u_d_p_socket.html#a6b0c51e1373f6644e4146414eb5fc98b">Status</a> SFML::UDPSocket::bind </td>
+          <td>(</td>
+          <td class="paramtype">std::uint32_t&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_s_f_m_l_1_1_ip_address.html">IpAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>address</em> = <code><a class="el" href="class_s_f_m_l_1_1_ip_address.html#af5a84f95d0f15975ba7b7d0b5c1b2d09">IpAddress::any</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Bind the socket to a specific port and address. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">port</td><td>The port to bind the socket to </td></tr>
+    <tr><td class="paramname">address</td><td>The address to bind the socket to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Status The status of the binding </dd></dl>
+
+</div>
+</div>
+<a id="acd8382423984d0efe1f355930b5034f1" name="acd8382423984d0efe1f355930b5034f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd8382423984d0efe1f355930b5034f1">&#9670;&#160;</a></span>receive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_f_m_l_1_1_u_d_p_socket.html#a6b0c51e1373f6644e4146414eb5fc98b">Status</a> SFML::UDPSocket::receive </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t &amp;&#160;</td>
+          <td class="paramname"><em>received</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_f_m_l_1_1_ip_address.html">IpAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t &amp;&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Receive data from a specific address and port. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The data to receive </td></tr>
+    <tr><td class="paramname">size</td><td>The size of the data </td></tr>
+    <tr><td class="paramname">received</td><td>The size of the received data </td></tr>
+    <tr><td class="paramname">address</td><td>The address to receive the data from </td></tr>
+    <tr><td class="paramname">port</td><td>The port to receive the data from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Status The status of the receiving </dd></dl>
+
+</div>
+</div>
+<a id="afd9405f89273be615fed287c6b17232b" name="afd9405f89273be615fed287c6b17232b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd9405f89273be615fed287c6b17232b">&#9670;&#160;</a></span>send()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_f_m_l_1_1_u_d_p_socket.html#a6b0c51e1373f6644e4146414eb5fc98b">Status</a> SFML::UDPSocket::send </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_s_f_m_l_1_1_ip_address.html">IpAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send data to a specific address and port. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The data to send </td></tr>
+    <tr><td class="paramname">size</td><td>The size of the data </td></tr>
+    <tr><td class="paramname">address</td><td>The address to send the data to </td></tr>
+    <tr><td class="paramname">port</td><td>The port to send the data to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Status The status of the sending </dd></dl>
+
+</div>
+</div>
+<a id="a86c745cf2942bbe8a8cd95f3f28a37b3" name="a86c745cf2942bbe8a8cd95f3f28a37b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86c745cf2942bbe8a8cd95f3f28a37b3">&#9670;&#160;</a></span>setBlocking()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SFML::UDPSocket::setBlocking </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>blocking</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the blocking state of the socket. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">blocking</td><td>The blocking state of the socket </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_u_d_p_socket_8hpp_source.html">UDPSocket.hpp</a></li>
 </ul>

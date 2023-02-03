@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['keyboard_0',['Keyboard',['../class_s_f_m_l_1_1_keyboard.html',1,'SFML']]],
-  ['keyevent_1',['KeyEvent',['../struct_s_f_m_l_1_1_event_1_1_key_event.html',1,'SFML::Event']]]
+  ['font_0',['Font',['../class_s_f_m_l_1_1_font.html#acc4d73f88ed6e7ca341a33acad655159',1,'SFML::Font::Font()'],['../class_s_f_m_l_1_1_font.html',1,'SFML::Font']]],
+  ['fontmanager_1',['FontManager',['../class_s_f_m_l_1_1_font_manager.html',1,'SFML']]]
 ];

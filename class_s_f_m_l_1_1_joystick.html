@@ -80,10 +80,15 @@ $(function() {
   <div class="headertitle"><div class="title">SFML::Joystick Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A encapsulation of sf::Joystick.  
+ <a href="class_s_f_m_l_1_1_joystick.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_joystick_8hpp_source.html">Joystick.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a88fef93fd79e789e510376c39b450d99"><td class="memItemLeft" align="right" valign="top"><a id="a88fef93fd79e789e510376c39b450d99" name="a88fef93fd79e789e510376c39b450d99"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Axis</b> { <br />
+<tr class="memitem:a88fef93fd79e789e510376c39b450d99"><td class="memItemLeft" align="right" valign="top"><a id="a88fef93fd79e789e510376c39b450d99" name="a88fef93fd79e789e510376c39b450d99"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_joystick.html#a88fef93fd79e789e510376c39b450d99">Axis</a> { <br />
 &#160;&#160;<b>X</b> = sf::Joystick::X
 , <b>Y</b> = sf::Joystick::Y
 , <b>Z</b> = sf::Joystick::Z
@@ -95,23 +100,188 @@ Public Types</h2></td></tr>
 , <b>PovY</b> = sf::Joystick::PovY
 <br />
  }</td></tr>
+<tr class="memdesc:a88fef93fd79e789e510376c39b450d99"><td class="mdescLeft">&#160;</td><td class="mdescRight">The axis of the joystick. <br /></td></tr>
 <tr class="separator:a88fef93fd79e789e510376c39b450d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:abeff4cdabea4ea96db5b7c6572bb1773"><td class="memItemLeft" align="right" valign="top"><a id="abeff4cdabea4ea96db5b7c6572bb1773" name="abeff4cdabea4ea96db5b7c6572bb1773"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isConnected</b> (std::uint32_t joystick)</td></tr>
+<tr class="memitem:abeff4cdabea4ea96db5b7c6572bb1773"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_joystick.html#abeff4cdabea4ea96db5b7c6572bb1773">isConnected</a> (std::uint32_t joystick)</td></tr>
+<tr class="memdesc:abeff4cdabea4ea96db5b7c6572bb1773"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a joystick is connected.  <br /></td></tr>
 <tr class="separator:abeff4cdabea4ea96db5b7c6572bb1773"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c2dfbab7396d39f83001ef9c34cedd8"><td class="memItemLeft" align="right" valign="top"><a id="a7c2dfbab7396d39f83001ef9c34cedd8" name="a7c2dfbab7396d39f83001ef9c34cedd8"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isButtonPressed</b> (std::uint32_t joystick, std::uint32_t button)</td></tr>
+<tr class="memitem:a7c2dfbab7396d39f83001ef9c34cedd8"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_joystick.html#a7c2dfbab7396d39f83001ef9c34cedd8">isButtonPressed</a> (std::uint32_t joystick, std::uint32_t button)</td></tr>
+<tr class="memdesc:a7c2dfbab7396d39f83001ef9c34cedd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a joystick button is pressed.  <br /></td></tr>
 <tr class="separator:a7c2dfbab7396d39f83001ef9c34cedd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0812c7e133fc66b489486fb3285529bb"><td class="memItemLeft" align="right" valign="top"><a id="a0812c7e133fc66b489486fb3285529bb" name="a0812c7e133fc66b489486fb3285529bb"></a>
-static float&#160;</td><td class="memItemRight" valign="bottom"><b>getAxisPosition</b> (std::uint32_t joystick, Axis axis)</td></tr>
+<tr class="memitem:a0812c7e133fc66b489486fb3285529bb"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_joystick.html#a0812c7e133fc66b489486fb3285529bb">getAxisPosition</a> (std::uint32_t joystick, <a class="el" href="class_s_f_m_l_1_1_joystick.html#a88fef93fd79e789e510376c39b450d99">Axis</a> axis)</td></tr>
+<tr class="memdesc:a0812c7e133fc66b489486fb3285529bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the position of a joystick axis.  <br /></td></tr>
 <tr class="separator:a0812c7e133fc66b489486fb3285529bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56353dfe746e5660c979702843ea5de1"><td class="memItemLeft" align="right" valign="top"><a id="a56353dfe746e5660c979702843ea5de1" name="a56353dfe746e5660c979702843ea5de1"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></tr>
+<tr class="memitem:a56353dfe746e5660c979702843ea5de1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_joystick.html#a56353dfe746e5660c979702843ea5de1">update</a> ()</td></tr>
+<tr class="memdesc:a56353dfe746e5660c979702843ea5de1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the state of all joysticks.  <br /></td></tr>
 <tr class="separator:a56353dfe746e5660c979702843ea5de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A encapsulation of sf::Joystick. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0812c7e133fc66b489486fb3285529bb" name="a0812c7e133fc66b489486fb3285529bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0812c7e133fc66b489486fb3285529bb">&#9670;&#160;</a></span>getAxisPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float SFML::Joystick::getAxisPosition </td>
+          <td>(</td>
+          <td class="paramtype">std::uint32_t&#160;</td>
+          <td class="paramname"><em>joystick</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_f_m_l_1_1_joystick.html#a88fef93fd79e789e510376c39b450d99">Axis</a>&#160;</td>
+          <td class="paramname"><em>axis</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the position of a joystick axis. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">joystick</td><td>The joystick id </td></tr>
+    <tr><td class="paramname">axis</td><td>The axis to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>float The position of the axis </dd></dl>
+
+</div>
+</div>
+<a id="a7c2dfbab7396d39f83001ef9c34cedd8" name="a7c2dfbab7396d39f83001ef9c34cedd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c2dfbab7396d39f83001ef9c34cedd8">&#9670;&#160;</a></span>isButtonPressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool SFML::Joystick::isButtonPressed </td>
+          <td>(</td>
+          <td class="paramtype">std::uint32_t&#160;</td>
+          <td class="paramname"><em>joystick</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::uint32_t&#160;</td>
+          <td class="paramname"><em>button</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if a joystick button is pressed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">joystick</td><td>The joystick id </td></tr>
+    <tr><td class="paramname">button</td><td>The button to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true The button is pressed </dd>
+<dd>
+false The button is not pressed </dd></dl>
+
+</div>
+</div>
+<a id="abeff4cdabea4ea96db5b7c6572bb1773" name="abeff4cdabea4ea96db5b7c6572bb1773"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abeff4cdabea4ea96db5b7c6572bb1773">&#9670;&#160;</a></span>isConnected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool SFML::Joystick::isConnected </td>
+          <td>(</td>
+          <td class="paramtype">std::uint32_t&#160;</td>
+          <td class="paramname"><em>joystick</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if a joystick is connected. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">joystick</td><td>The joystick id </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true The joystick is connected </dd>
+<dd>
+false The joystick is not connected </dd></dl>
+
+</div>
+</div>
+<a id="a56353dfe746e5660c979702843ea5de1" name="a56353dfe746e5660c979702843ea5de1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56353dfe746e5660c979702843ea5de1">&#9670;&#160;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool SFML::Joystick::update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Update the state of all joysticks. </p>
+<dl class="section return"><dt>Returns</dt><dd>true The state of all joysticks was updated </dd>
+<dd>
+false The state of all joysticks was not updated </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_joystick_8hpp_source.html">Joystick.hpp</a></li>
 </ul>

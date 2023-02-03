@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['event_0',['Event',['../class_s_f_m_l_1_1_event.html',1,'SFML']]],
-  ['eventmanager_1',['EventManager',['../class_s_f_m_l_1_1_event_manager.html',1,'SFML']]]
+  ['bind_0',['bind',['../class_s_f_m_l_1_1_u_d_p_socket.html#a68d118b02a5c232ee08266348ba1ed38',1,'SFML::UDPSocket']]],
+  ['broadcast_1',['broadcast',['../class_s_f_m_l_1_1_ip_address.html#a3428b07cc1dd4e35a46f40f82a3496b1',1,'SFML::IpAddress']]],
+  ['button_2',['Button',['../class_s_f_m_l_1_1_mouse.html#ad752f0d19b981ab68c5f72409052fa3d',1,'SFML::Mouse']]]
 ];

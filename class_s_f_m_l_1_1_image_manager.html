@@ -79,16 +79,104 @@ $(function() {
   <div class="headertitle"><div class="title">SFML::ImageManager Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A manager for images.  
+ <a href="class_s_f_m_l_1_1_image_manager.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_image_manager_8hpp_source.html">ImageManager.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ada9bc115c689b42d9fe172e8bbab7fe2"><td class="memItemLeft" align="right" valign="top"><a id="ada9bc115c689b42d9fe172e8bbab7fe2" name="ada9bc115c689b42d9fe172e8bbab7fe2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>registerImage</b> (const std::string &amp;id, const std::string &amp;filename)</td></tr>
+<tr class="memitem:ada9bc115c689b42d9fe172e8bbab7fe2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_image_manager.html#ada9bc115c689b42d9fe172e8bbab7fe2">registerImage</a> (const std::string &amp;id, const std::string &amp;filename)</td></tr>
+<tr class="memdesc:ada9bc115c689b42d9fe172e8bbab7fe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a image.  <br /></td></tr>
 <tr class="separator:ada9bc115c689b42d9fe172e8bbab7fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a070ab0d86dcf7708f0358e4e46141382"><td class="memItemLeft" align="right" valign="top"><a id="a070ab0d86dcf7708f0358e4e46141382" name="a070ab0d86dcf7708f0358e4e46141382"></a>
-std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_image.html">Image</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getImage</b> (const std::string &amp;id)</td></tr>
+<tr class="memitem:a070ab0d86dcf7708f0358e4e46141382"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_image.html">Image</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_image_manager.html#a070ab0d86dcf7708f0358e4e46141382">getImage</a> (const std::string &amp;id)</td></tr>
+<tr class="memdesc:a070ab0d86dcf7708f0358e4e46141382"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a image.  <br /></td></tr>
 <tr class="separator:a070ab0d86dcf7708f0358e4e46141382"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A manager for images. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a070ab0d86dcf7708f0358e4e46141382" name="a070ab0d86dcf7708f0358e4e46141382"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a070ab0d86dcf7708f0358e4e46141382">&#9670;&#160;</a></span>getImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_image.html">Image</a> &gt; SFML::ImageManager::getImage </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a image. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The ID of the image </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;Image&gt; The image </dd></dl>
+
+</div>
+</div>
+<a id="ada9bc115c689b42d9fe172e8bbab7fe2" name="ada9bc115c689b42d9fe172e8bbab7fe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada9bc115c689b42d9fe172e8bbab7fe2">&#9670;&#160;</a></span>registerImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SFML::ImageManager::registerImage </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Register a image. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The ID of the image </td></tr>
+    <tr><td class="paramname">filename</td><td>The path to the image file </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_image_manager_8hpp_source.html">ImageManager.hpp</a></li>
 </ul>

@@ -79,14 +79,19 @@ $(function() {
   <div class="headertitle"><div class="title">SFML::MusicManager Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A manager for musics.  
+ <a href="class_s_f_m_l_1_1_music_manager.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_music_manager_8hpp_source.html">MusicManager.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abea9b250e2501ff330bf8b626078783f"><td class="memItemLeft" align="right" valign="top"><a id="abea9b250e2501ff330bf8b626078783f" name="abea9b250e2501ff330bf8b626078783f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>registerMusic</b> (const std::string &amp;id, const std::string &amp;filename, bool is_looping=true, Music::Status status=Music::Stopped)</td></tr>
+<tr class="memitem:abea9b250e2501ff330bf8b626078783f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_music_manager.html#abea9b250e2501ff330bf8b626078783f">registerMusic</a> (const std::string &amp;id, const std::string &amp;filename, bool is_looping=true, <a class="el" href="class_s_f_m_l_1_1_music.html#a1b3e108ea1f57b1aa6e60214a5180a6f">Music::Status</a> status=Music::Stopped)</td></tr>
+<tr class="memdesc:abea9b250e2501ff330bf8b626078783f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a music.  <br /></td></tr>
 <tr class="separator:abea9b250e2501ff330bf8b626078783f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29b430223d8b35c834a39878f7dac8d5"><td class="memItemLeft" align="right" valign="top"><a id="a29b430223d8b35c834a39878f7dac8d5" name="a29b430223d8b35c834a39878f7dac8d5"></a>
-std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_music.html">Music</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getMusic</b> (const std::string &amp;id)</td></tr>
+<tr class="memitem:a29b430223d8b35c834a39878f7dac8d5"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_music.html">Music</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_music_manager.html#a29b430223d8b35c834a39878f7dac8d5">getMusic</a> (const std::string &amp;id)</td></tr>
+<tr class="memdesc:a29b430223d8b35c834a39878f7dac8d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a music.  <br /></td></tr>
 <tr class="separator:a29b430223d8b35c834a39878f7dac8d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59d9f8a0d336e18ceb3a9c2f664616b1"><td class="memItemLeft" align="right" valign="top"><a id="a59d9f8a0d336e18ceb3a9c2f664616b1" name="a59d9f8a0d336e18ceb3a9c2f664616b1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setMusicsVolume</b> (float volume)</td></tr>
@@ -95,6 +100,103 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setMusicsVolume</b> (
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isEnabled</b> () const</td></tr>
 <tr class="separator:a5ffde729ff71114ced7cc186f4a6e103"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A manager for musics. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a29b430223d8b35c834a39878f7dac8d5" name="a29b430223d8b35c834a39878f7dac8d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29b430223d8b35c834a39878f7dac8d5">&#9670;&#160;</a></span>getMusic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_music.html">Music</a> &gt; SFML::MusicManager::getMusic </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a music. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The ID of the music </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;Music&gt; The music </dd></dl>
+
+</div>
+</div>
+<a id="abea9b250e2501ff330bf8b626078783f" name="abea9b250e2501ff330bf8b626078783f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abea9b250e2501ff330bf8b626078783f">&#9670;&#160;</a></span>registerMusic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SFML::MusicManager::registerMusic </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_looping</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_f_m_l_1_1_music.html#a1b3e108ea1f57b1aa6e60214a5180a6f">Music::Status</a>&#160;</td>
+          <td class="paramname"><em>status</em> = <code>Music::Stopped</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Register a music. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The ID of the music </td></tr>
+    <tr><td class="paramname">filename</td><td>The path to the music file </td></tr>
+    <tr><td class="paramname">is_looping</td><td>If the music should loop </td></tr>
+    <tr><td class="paramname">status</td><td>The status of the music </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_music_manager_8hpp_source.html">MusicManager.hpp</a></li>
 </ul>

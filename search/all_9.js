@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['text_0',['Text',['../class_s_f_m_l_1_1_text.html',1,'SFML']]],
-  ['textevent_1',['TextEvent',['../struct_s_f_m_l_1_1_event_1_1_text_event.html',1,'SFML::Event']]],
-  ['textmanager_2',['TextManager',['../class_s_f_m_l_1_1_text_manager.html',1,'SFML']]],
-  ['texture_3',['Texture',['../class_s_f_m_l_1_1_texture.html',1,'SFML']]],
-  ['texturemanager_4',['TextureManager',['../class_s_f_m_l_1_1_texture_manager.html',1,'SFML']]],
-  ['time_5',['Time',['../class_s_f_m_l_1_1_time.html',1,'SFML']]]
+  ['key_0',['Key',['../class_s_f_m_l_1_1_keyboard.html#a684f148c288c722b98f040ecd9a20702',1,'SFML::Keyboard']]],
+  ['keyboard_1',['Keyboard',['../class_s_f_m_l_1_1_keyboard.html',1,'SFML']]],
+  ['keyevent_2',['KeyEvent',['../struct_s_f_m_l_1_1_event_1_1_key_event.html#a9ec0cad9ae077d0e258c50b3f7f9b467',1,'SFML::Event::KeyEvent::KeyEvent()'],['../struct_s_f_m_l_1_1_event_1_1_key_event.html',1,'SFML::Event::KeyEvent']]]
 ];

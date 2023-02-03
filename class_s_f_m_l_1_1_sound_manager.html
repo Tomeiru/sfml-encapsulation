@@ -79,22 +79,186 @@ $(function() {
   <div class="headertitle"><div class="title">SFML::SoundManager Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A manager for sounds.  
+ <a href="class_s_f_m_l_1_1_sound_manager.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_sound_manager_8hpp_source.html">SoundManager.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a384984d6c0ba0677361105363468f6f5"><td class="memItemLeft" align="right" valign="top"><a id="a384984d6c0ba0677361105363468f6f5" name="a384984d6c0ba0677361105363468f6f5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>registerSound</b> (const std::string &amp;id, const std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_sound_buffer.html">SoundBuffer</a> &gt; &amp;sound_buffer, bool is_looping=true, Sound::Status status=Sound::Stopped)</td></tr>
+<tr class="memitem:a384984d6c0ba0677361105363468f6f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_sound_manager.html#a384984d6c0ba0677361105363468f6f5">registerSound</a> (const std::string &amp;id, const std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_sound_buffer.html">SoundBuffer</a> &gt; &amp;sound_buffer, bool is_looping=true, <a class="el" href="class_s_f_m_l_1_1_sound.html#a570359ff09e126e4070fd68a4d0752b0">Sound::Status</a> status=Sound::Stopped)</td></tr>
+<tr class="memdesc:a384984d6c0ba0677361105363468f6f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a sound.  <br /></td></tr>
 <tr class="separator:a384984d6c0ba0677361105363468f6f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ad80a55c88e9a042aa3045c0cddef02"><td class="memItemLeft" align="right" valign="top"><a id="a4ad80a55c88e9a042aa3045c0cddef02" name="a4ad80a55c88e9a042aa3045c0cddef02"></a>
-std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_sound.html">Sound</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getSound</b> (const std::string &amp;id)</td></tr>
+<tr class="memitem:a4ad80a55c88e9a042aa3045c0cddef02"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_sound.html">Sound</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_sound_manager.html#a4ad80a55c88e9a042aa3045c0cddef02">getSound</a> (const std::string &amp;id)</td></tr>
+<tr class="memdesc:a4ad80a55c88e9a042aa3045c0cddef02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a sound.  <br /></td></tr>
 <tr class="separator:a4ad80a55c88e9a042aa3045c0cddef02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7eca45f74765b8916a287b568a21ec03"><td class="memItemLeft" align="right" valign="top"><a id="a7eca45f74765b8916a287b568a21ec03" name="a7eca45f74765b8916a287b568a21ec03"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setSoundsVolume</b> (float volume)</td></tr>
+<tr class="memitem:a7eca45f74765b8916a287b568a21ec03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_sound_manager.html#a7eca45f74765b8916a287b568a21ec03">setSoundsVolume</a> (float volume)</td></tr>
+<tr class="memdesc:a7eca45f74765b8916a287b568a21ec03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the sounds volume.  <br /></td></tr>
 <tr class="separator:a7eca45f74765b8916a287b568a21ec03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab701f64fffab5a869a05649429bde92"><td class="memItemLeft" align="right" valign="top"><a id="aab701f64fffab5a869a05649429bde92" name="aab701f64fffab5a869a05649429bde92"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isEnabled</b> () const</td></tr>
+<tr class="memitem:aab701f64fffab5a869a05649429bde92"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_sound_manager.html#aab701f64fffab5a869a05649429bde92">isEnabled</a> () const</td></tr>
+<tr class="memdesc:aab701f64fffab5a869a05649429bde92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the sound manager is enabled.  <br /></td></tr>
 <tr class="separator:aab701f64fffab5a869a05649429bde92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A manager for sounds. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4ad80a55c88e9a042aa3045c0cddef02" name="a4ad80a55c88e9a042aa3045c0cddef02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ad80a55c88e9a042aa3045c0cddef02">&#9670;&#160;</a></span>getSound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_sound.html">Sound</a> &gt; SFML::SoundManager::getSound </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a sound. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The ID of the sound </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;Sound&gt; The sound </dd></dl>
+
+</div>
+</div>
+<a id="aab701f64fffab5a869a05649429bde92" name="aab701f64fffab5a869a05649429bde92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab701f64fffab5a869a05649429bde92">&#9670;&#160;</a></span>isEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SFML::SoundManager::isEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if the sound manager is enabled. </p>
+<dl class="section return"><dt>Returns</dt><dd>true If the sound manager is enabled, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a384984d6c0ba0677361105363468f6f5" name="a384984d6c0ba0677361105363468f6f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a384984d6c0ba0677361105363468f6f5">&#9670;&#160;</a></span>registerSound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SFML::SoundManager::registerSound </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_sound_buffer.html">SoundBuffer</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sound_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_looping</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_f_m_l_1_1_sound.html#a570359ff09e126e4070fd68a4d0752b0">Sound::Status</a>&#160;</td>
+          <td class="paramname"><em>status</em> = <code>Sound::Stopped</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Register a sound. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The ID of the sound </td></tr>
+    <tr><td class="paramname">sound_buffer</td><td>The sound buffer </td></tr>
+    <tr><td class="paramname">is_looping</td><td>Whether the sound is looping or not </td></tr>
+    <tr><td class="paramname">status</td><td>The status of the sound </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7eca45f74765b8916a287b568a21ec03" name="a7eca45f74765b8916a287b568a21ec03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eca45f74765b8916a287b568a21ec03">&#9670;&#160;</a></span>setSoundsVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SFML::SoundManager::setSoundsVolume </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>volume</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the sounds volume. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">volume</td><td>The volume </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_sound_manager_8hpp_source.html">SoundManager.hpp</a></li>
 </ul>

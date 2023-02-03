@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['joystick_0',['Joystick',['../class_s_f_m_l_1_1_joystick.html',1,'SFML']]],
-  ['joystickbuttonevent_1',['JoystickButtonEvent',['../struct_s_f_m_l_1_1_event_1_1_joystick_button_event.html',1,'SFML::Event']]],
-  ['joystickconnectevent_2',['JoystickConnectEvent',['../struct_s_f_m_l_1_1_event_1_1_joystick_connect_event.html',1,'SFML::Event']]],
-  ['joystickmoveevent_3',['JoystickMoveEvent',['../struct_s_f_m_l_1_1_event_1_1_joystick_move_event.html',1,'SFML::Event']]]
+  ['event_0',['Event',['../class_s_f_m_l_1_1_event.html#a49e4c1dee64919505f105e47030d3306',1,'SFML::Event::Event()'],['../class_s_f_m_l_1_1_event.html',1,'SFML::Event']]],
+  ['eventmanager_1',['EventManager',['../class_s_f_m_l_1_1_event_manager.html',1,'SFML']]],
+  ['eventtype_2',['EventType',['../class_s_f_m_l_1_1_event.html#a69a482a6bce0315fdb6bcb6fde274664',1,'SFML::Event']]]
 ];

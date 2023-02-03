@@ -81,25 +81,30 @@ $(function() {
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span>SFML {</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_s_f_m_l_1_1_image.html">    8</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_s_f_m_l_1_1_image.html">Image</a> {</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <a class="code hl_class" href="class_s_f_m_l_1_1_image.html">Image</a>(<span class="keyword">const</span> std::string &amp;filename) : image() {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>            <span class="keywordflow">if</span> (!image.loadFromFile(filename))</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>                <span class="keywordflow">throw</span> <a class="code hl_class" href="class_s_f_m_l_1_1_runtime_exception.html">RuntimeException</a>(<span class="stringliteral">&quot;Image::ctor&quot;</span>, <span class="stringliteral">&quot;image.loadFromFile failed, filename must be invalid&quot;</span>);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        }</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keyword">const</span> std::uint8_t *getPixelsPointer()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            <span class="keywordflow">return</span> (image.getPixelsPtr());</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        }</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        std::uint32_t getWidth()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            <span class="keywordflow">return</span> (image.getSize().x);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        }</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        std::uint32_t getHeight()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <span class="keywordflow">return</span> (image.getSize().y);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        }</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        sf::Image image;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    };</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_s_f_m_l_1_1_image.html#aee0c97788a5c8089520f022f6762a045">   15</a></span>        <a class="code hl_function" href="class_s_f_m_l_1_1_image.html#aee0c97788a5c8089520f022f6762a045">Image</a>(<span class="keyword">const</span> std::string &amp;filename) : image() {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            <span class="keywordflow">if</span> (!image.loadFromFile(filename))</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                <span class="keywordflow">throw</span> <a class="code hl_class" href="class_s_f_m_l_1_1_runtime_exception.html">RuntimeException</a>(<span class="stringliteral">&quot;Image::ctor&quot;</span>, <span class="stringliteral">&quot;image.loadFromFile failed, filename must be invalid&quot;</span>);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        }</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_s_f_m_l_1_1_image.html#ac0e7a721378d69d8987e4e26037115ce">   25</a></span>        <span class="keyword">const</span> std::uint8_t *<a class="code hl_function" href="class_s_f_m_l_1_1_image.html#ac0e7a721378d69d8987e4e26037115ce">getPixelsPointer</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <span class="keywordflow">return</span> (image.getPixelsPtr());</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_s_f_m_l_1_1_image.html#a827e58c93a04b098c70760553ea104a3">   33</a></span>        std::uint32_t <a class="code hl_function" href="class_s_f_m_l_1_1_image.html#a827e58c93a04b098c70760553ea104a3">getWidth</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <span class="keywordflow">return</span> (image.getSize().x);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_s_f_m_l_1_1_image.html#a4f9bebf198ebe876a5a1ae414077cd08">   41</a></span>        std::uint32_t <a class="code hl_function" href="class_s_f_m_l_1_1_image.html#a4f9bebf198ebe876a5a1ae414077cd08">getHeight</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keywordflow">return</span> (image.getSize().y);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        sf::Image image;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    };</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
 <div class="ttc" id="aclass_s_f_m_l_1_1_image_html"><div class="ttname"><a href="class_s_f_m_l_1_1_image.html">SFML::Image</a></div><div class="ttdef"><b>Definition:</b> Image.hpp:8</div></div>
-<div class="ttc" id="aclass_s_f_m_l_1_1_runtime_exception_html"><div class="ttname"><a href="class_s_f_m_l_1_1_runtime_exception.html">SFML::RuntimeException</a></div><div class="ttdef"><b>Definition:</b> RuntimeException.hpp:7</div></div>
+<div class="ttc" id="aclass_s_f_m_l_1_1_image_html_a4f9bebf198ebe876a5a1ae414077cd08"><div class="ttname"><a href="class_s_f_m_l_1_1_image.html#a4f9bebf198ebe876a5a1ae414077cd08">SFML::Image::getHeight</a></div><div class="ttdeci">std::uint32_t getHeight() const</div><div class="ttdoc">Get the height of the image.</div><div class="ttdef"><b>Definition:</b> Image.hpp:41</div></div>
+<div class="ttc" id="aclass_s_f_m_l_1_1_image_html_a827e58c93a04b098c70760553ea104a3"><div class="ttname"><a href="class_s_f_m_l_1_1_image.html#a827e58c93a04b098c70760553ea104a3">SFML::Image::getWidth</a></div><div class="ttdeci">std::uint32_t getWidth() const</div><div class="ttdoc">Get the width of the image.</div><div class="ttdef"><b>Definition:</b> Image.hpp:33</div></div>
+<div class="ttc" id="aclass_s_f_m_l_1_1_image_html_ac0e7a721378d69d8987e4e26037115ce"><div class="ttname"><a href="class_s_f_m_l_1_1_image.html#ac0e7a721378d69d8987e4e26037115ce">SFML::Image::getPixelsPointer</a></div><div class="ttdeci">const std::uint8_t * getPixelsPointer() const</div><div class="ttdoc">Get the Image object.</div><div class="ttdef"><b>Definition:</b> Image.hpp:25</div></div>
+<div class="ttc" id="aclass_s_f_m_l_1_1_image_html_aee0c97788a5c8089520f022f6762a045"><div class="ttname"><a href="class_s_f_m_l_1_1_image.html#aee0c97788a5c8089520f022f6762a045">SFML::Image::Image</a></div><div class="ttdeci">Image(const std::string &amp;filename)</div><div class="ttdoc">Construct a new Image object.</div><div class="ttdef"><b>Definition:</b> Image.hpp:15</div></div>
+<div class="ttc" id="aclass_s_f_m_l_1_1_runtime_exception_html"><div class="ttname"><a href="class_s_f_m_l_1_1_runtime_exception.html">SFML::RuntimeException</a></div><div class="ttdoc">A runtime exception.</div><div class="ttdef"><b>Definition:</b> RuntimeException.hpp:10</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

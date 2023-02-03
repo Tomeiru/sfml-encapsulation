@@ -80,45 +80,210 @@ $(function() {
   <div class="headertitle"><div class="title">SFML::Music Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A encapsulation of sf::Music.  
+ <a href="class_s_f_m_l_1_1_music.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_music_8hpp_source.html">Music.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a1b3e108ea1f57b1aa6e60214a5180a6f"><td class="memItemLeft" align="right" valign="top"><a id="a1b3e108ea1f57b1aa6e60214a5180a6f" name="a1b3e108ea1f57b1aa6e60214a5180a6f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Status</b> { <b>Stopped</b> = sf::Music::Stopped
+<tr class="memitem:a1b3e108ea1f57b1aa6e60214a5180a6f"><td class="memItemLeft" align="right" valign="top"><a id="a1b3e108ea1f57b1aa6e60214a5180a6f" name="a1b3e108ea1f57b1aa6e60214a5180a6f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_music.html#a1b3e108ea1f57b1aa6e60214a5180a6f">Status</a> { <b>Stopped</b> = sf::Music::Stopped
 , <b>Paused</b> = sf::Music::Paused
 , <b>Playing</b> = sf::Music::Playing
  }</td></tr>
+<tr class="memdesc:a1b3e108ea1f57b1aa6e60214a5180a6f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_s_f_m_l_1_1_music.html" title="A encapsulation of sf::Music.">Music</a> status enumeration. <br /></td></tr>
 <tr class="separator:a1b3e108ea1f57b1aa6e60214a5180a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aaeddece4c6f533073cd85dbdbb8bf778"><td class="memItemLeft" align="right" valign="top"><a id="aaeddece4c6f533073cd85dbdbb8bf778" name="aaeddece4c6f533073cd85dbdbb8bf778"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Music</b> (const std::string &amp;filename, float volume=100, bool is_looping=true, Status status=Stopped)</td></tr>
+<tr class="memitem:aaeddece4c6f533073cd85dbdbb8bf778"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_music.html#aaeddece4c6f533073cd85dbdbb8bf778">Music</a> (const std::string &amp;filename, float volume=100, bool is_looping=true, <a class="el" href="class_s_f_m_l_1_1_music.html#a1b3e108ea1f57b1aa6e60214a5180a6f">Status</a> status=Stopped)</td></tr>
+<tr class="memdesc:aaeddece4c6f533073cd85dbdbb8bf778"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="class_s_f_m_l_1_1_music.html" title="A encapsulation of sf::Music.">Music</a> object.  <br /></td></tr>
 <tr class="separator:aaeddece4c6f533073cd85dbdbb8bf778"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace9694dd85bbb61b0e624898950f0564"><td class="memItemLeft" align="right" valign="top"><a id="ace9694dd85bbb61b0e624898950f0564" name="ace9694dd85bbb61b0e624898950f0564"></a>
-const sf::Music &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getMusic</b> () const</td></tr>
+<tr class="memitem:ace9694dd85bbb61b0e624898950f0564"><td class="memItemLeft" align="right" valign="top">const sf::Music &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_music.html#ace9694dd85bbb61b0e624898950f0564">getMusic</a> () const</td></tr>
+<tr class="memdesc:ace9694dd85bbb61b0e624898950f0564"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="class_s_f_m_l_1_1_music.html" title="A encapsulation of sf::Music.">Music</a> object.  <br /></td></tr>
 <tr class="separator:ace9694dd85bbb61b0e624898950f0564"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9170e3031cb09d65d7f4aaf361fa32fd"><td class="memItemLeft" align="right" valign="top"><a id="a9170e3031cb09d65d7f4aaf361fa32fd" name="a9170e3031cb09d65d7f4aaf361fa32fd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>play</b> ()</td></tr>
+<tr class="memdesc:a9170e3031cb09d65d7f4aaf361fa32fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play the music. <br /></td></tr>
 <tr class="separator:a9170e3031cb09d65d7f4aaf361fa32fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f930cc3fbabb7a111edf9dfad73d91c"><td class="memItemLeft" align="right" valign="top"><a id="a0f930cc3fbabb7a111edf9dfad73d91c" name="a0f930cc3fbabb7a111edf9dfad73d91c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>pause</b> ()</td></tr>
+<tr class="memdesc:a0f930cc3fbabb7a111edf9dfad73d91c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pause the music. <br /></td></tr>
 <tr class="separator:a0f930cc3fbabb7a111edf9dfad73d91c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72faa8dd9273c9e4e725eee727b84f98"><td class="memItemLeft" align="right" valign="top"><a id="a72faa8dd9273c9e4e725eee727b84f98" name="a72faa8dd9273c9e4e725eee727b84f98"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> ()</td></tr>
+<tr class="memdesc:a72faa8dd9273c9e4e725eee727b84f98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the music. <br /></td></tr>
 <tr class="separator:a72faa8dd9273c9e4e725eee727b84f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5be4e3318362d5e27a9d83b6f38fa514"><td class="memItemLeft" align="right" valign="top"><a id="a5be4e3318362d5e27a9d83b6f38fa514" name="a5be4e3318362d5e27a9d83b6f38fa514"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setVolume</b> (float volume)</td></tr>
+<tr class="memitem:a5be4e3318362d5e27a9d83b6f38fa514"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_music.html#a5be4e3318362d5e27a9d83b6f38fa514">setVolume</a> (float volume)</td></tr>
+<tr class="memdesc:a5be4e3318362d5e27a9d83b6f38fa514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the volume of the music.  <br /></td></tr>
 <tr class="separator:a5be4e3318362d5e27a9d83b6f38fa514"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a105b66d307deee2eda61272da70e89db"><td class="memItemLeft" align="right" valign="top"><a id="a105b66d307deee2eda61272da70e89db" name="a105b66d307deee2eda61272da70e89db"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setLoop</b> (bool is_looping)</td></tr>
+<tr class="memitem:a105b66d307deee2eda61272da70e89db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_music.html#a105b66d307deee2eda61272da70e89db">setLoop</a> (bool is_looping)</td></tr>
+<tr class="memdesc:a105b66d307deee2eda61272da70e89db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make the music loop.  <br /></td></tr>
 <tr class="separator:a105b66d307deee2eda61272da70e89db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a31bc4abda6998c6a05d5fc24c6aa82"><td class="memItemLeft" align="right" valign="top"><a id="a0a31bc4abda6998c6a05d5fc24c6aa82" name="a0a31bc4abda6998c6a05d5fc24c6aa82"></a>
-const Status &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getStatus</b> () const</td></tr>
+const <a class="el" href="class_s_f_m_l_1_1_music.html#a1b3e108ea1f57b1aa6e60214a5180a6f">Status</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getStatus</b> () const</td></tr>
+<tr class="memdesc:a0a31bc4abda6998c6a05d5fc24c6aa82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the status of the music. <br /></td></tr>
 <tr class="separator:a0a31bc4abda6998c6a05d5fc24c6aa82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0cf1e6125c138f22e1c8cd4628e2a88"><td class="memItemLeft" align="right" valign="top"><a id="ac0cf1e6125c138f22e1c8cd4628e2a88" name="ac0cf1e6125c138f22e1c8cd4628e2a88"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>updateStatus</b> ()</td></tr>
+<tr class="memdesc:ac0cf1e6125c138f22e1c8cd4628e2a88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the status of the music. <br /></td></tr>
 <tr class="separator:ac0cf1e6125c138f22e1c8cd4628e2a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A encapsulation of sf::Music. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aaeddece4c6f533073cd85dbdbb8bf778" name="aaeddece4c6f533073cd85dbdbb8bf778"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaeddece4c6f533073cd85dbdbb8bf778">&#9670;&#160;</a></span>Music()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SFML::Music::Music </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>volume</em> = <code>100</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_looping</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_f_m_l_1_1_music.html#a1b3e108ea1f57b1aa6e60214a5180a6f">Status</a>&#160;</td>
+          <td class="paramname"><em>status</em> = <code>Stopped</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a new <a class="el" href="class_s_f_m_l_1_1_music.html" title="A encapsulation of sf::Music.">Music</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>The path to the music file </td></tr>
+    <tr><td class="paramname">volume</td><td>The volume of the music </td></tr>
+    <tr><td class="paramname">is_looping</td><td>If the music is looping </td></tr>
+    <tr><td class="paramname">status</td><td>The status of the music </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ace9694dd85bbb61b0e624898950f0564" name="ace9694dd85bbb61b0e624898950f0564"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace9694dd85bbb61b0e624898950f0564">&#9670;&#160;</a></span>getMusic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const sf::Music &amp; SFML::Music::getMusic </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the <a class="el" href="class_s_f_m_l_1_1_music.html" title="A encapsulation of sf::Music.">Music</a> object. </p>
+<dl class="section return"><dt>Returns</dt><dd>const sf::Music&amp; The music </dd></dl>
+
+</div>
+</div>
+<a id="a105b66d307deee2eda61272da70e89db" name="a105b66d307deee2eda61272da70e89db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a105b66d307deee2eda61272da70e89db">&#9670;&#160;</a></span>setLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SFML::Music::setLoop </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_looping</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Make the music loop. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">is_looping</td><td>If the music is looping </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5be4e3318362d5e27a9d83b6f38fa514" name="a5be4e3318362d5e27a9d83b6f38fa514"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5be4e3318362d5e27a9d83b6f38fa514">&#9670;&#160;</a></span>setVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SFML::Music::setVolume </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>volume</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the volume of the music. </p>
+<dl class="section return"><dt>Returns</dt><dd>float The volume </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_music_8hpp_source.html">Music.hpp</a></li>
 </ul>

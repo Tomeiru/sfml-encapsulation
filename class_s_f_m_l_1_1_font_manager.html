@@ -79,16 +79,104 @@ $(function() {
   <div class="headertitle"><div class="title">SFML::FontManager Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A manager for fonts.  
+ <a href="class_s_f_m_l_1_1_font_manager.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_font_manager_8hpp_source.html">FontManager.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aed1b53c2e7e6f707c77839d5c3555329"><td class="memItemLeft" align="right" valign="top"><a id="aed1b53c2e7e6f707c77839d5c3555329" name="aed1b53c2e7e6f707c77839d5c3555329"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>registerFont</b> (const std::string &amp;id, const std::string &amp;filename)</td></tr>
+<tr class="memitem:aed1b53c2e7e6f707c77839d5c3555329"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_font_manager.html#aed1b53c2e7e6f707c77839d5c3555329">registerFont</a> (const std::string &amp;id, const std::string &amp;filename)</td></tr>
+<tr class="memdesc:aed1b53c2e7e6f707c77839d5c3555329"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a font.  <br /></td></tr>
 <tr class="separator:aed1b53c2e7e6f707c77839d5c3555329"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab00e47aae042807391696934839c79bd"><td class="memItemLeft" align="right" valign="top"><a id="ab00e47aae042807391696934839c79bd" name="ab00e47aae042807391696934839c79bd"></a>
-std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_font.html">Font</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getFont</b> (const std::string &amp;id)</td></tr>
+<tr class="memitem:ab00e47aae042807391696934839c79bd"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_font.html">Font</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_font_manager.html#ab00e47aae042807391696934839c79bd">getFont</a> (const std::string &amp;id)</td></tr>
+<tr class="memdesc:ab00e47aae042807391696934839c79bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a font.  <br /></td></tr>
 <tr class="separator:ab00e47aae042807391696934839c79bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A manager for fonts. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab00e47aae042807391696934839c79bd" name="ab00e47aae042807391696934839c79bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab00e47aae042807391696934839c79bd">&#9670;&#160;</a></span>getFont()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_font.html">Font</a> &gt; SFML::FontManager::getFont </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a font. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The ID of the font </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;Font&gt; The font </dd></dl>
+
+</div>
+</div>
+<a id="aed1b53c2e7e6f707c77839d5c3555329" name="aed1b53c2e7e6f707c77839d5c3555329"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed1b53c2e7e6f707c77839d5c3555329">&#9670;&#160;</a></span>registerFont()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SFML::FontManager::registerFont </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Register a font. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The ID of the font </td></tr>
+    <tr><td class="paramname">filename</td><td>The path to the font file </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_font_manager_8hpp_source.html">FontManager.hpp</a></li>
 </ul>

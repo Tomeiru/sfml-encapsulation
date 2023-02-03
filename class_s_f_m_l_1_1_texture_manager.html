@@ -79,16 +79,104 @@ $(function() {
   <div class="headertitle"><div class="title">SFML::TextureManager Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A manager for textures.  
+ <a href="class_s_f_m_l_1_1_texture_manager.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_texture_manager_8hpp_source.html">TextureManager.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5e5e764cc6fba19febbb709af62edfbb"><td class="memItemLeft" align="right" valign="top"><a id="a5e5e764cc6fba19febbb709af62edfbb" name="a5e5e764cc6fba19febbb709af62edfbb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>registerTexture</b> (const std::string &amp;id, const std::string &amp;filename)</td></tr>
+<tr class="memitem:a5e5e764cc6fba19febbb709af62edfbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_texture_manager.html#a5e5e764cc6fba19febbb709af62edfbb">registerTexture</a> (const std::string &amp;id, const std::string &amp;filename)</td></tr>
+<tr class="memdesc:a5e5e764cc6fba19febbb709af62edfbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a texture.  <br /></td></tr>
 <tr class="separator:a5e5e764cc6fba19febbb709af62edfbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d6872273d830e3406eec2e0878c0045"><td class="memItemLeft" align="right" valign="top"><a id="a6d6872273d830e3406eec2e0878c0045" name="a6d6872273d830e3406eec2e0878c0045"></a>
-std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_texture.html">Texture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getTexture</b> (const std::string &amp;id)</td></tr>
+<tr class="memitem:a6d6872273d830e3406eec2e0878c0045"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_texture.html">Texture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_texture_manager.html#a6d6872273d830e3406eec2e0878c0045">getTexture</a> (const std::string &amp;id)</td></tr>
+<tr class="memdesc:a6d6872273d830e3406eec2e0878c0045"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a texture.  <br /></td></tr>
 <tr class="separator:a6d6872273d830e3406eec2e0878c0045"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A manager for textures. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6d6872273d830e3406eec2e0878c0045" name="a6d6872273d830e3406eec2e0878c0045"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d6872273d830e3406eec2e0878c0045">&#9670;&#160;</a></span>getTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_texture.html">Texture</a> &gt; SFML::TextureManager::getTexture </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a texture. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The ID of the texture </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;Texture&gt; The texture </dd></dl>
+
+</div>
+</div>
+<a id="a5e5e764cc6fba19febbb709af62edfbb" name="a5e5e764cc6fba19febbb709af62edfbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e5e764cc6fba19febbb709af62edfbb">&#9670;&#160;</a></span>registerTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SFML::TextureManager::registerTexture </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Register a texture. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The ID of the texture </td></tr>
+    <tr><td class="paramname">filename</td><td>The path to the texture file </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_texture_manager_8hpp_source.html">TextureManager.hpp</a></li>
 </ul>

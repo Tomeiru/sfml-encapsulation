@@ -80,10 +80,15 @@ $(function() {
   <div class="headertitle"><div class="title">SFML::Mouse Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A encapsulation of sf::Mouse.  
+ <a href="class_s_f_m_l_1_1_mouse.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_mouse_8hpp_source.html">Mouse.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ad752f0d19b981ab68c5f72409052fa3d"><td class="memItemLeft" align="right" valign="top"><a id="ad752f0d19b981ab68c5f72409052fa3d" name="ad752f0d19b981ab68c5f72409052fa3d"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Button</b> { <br />
+<tr class="memitem:ad752f0d19b981ab68c5f72409052fa3d"><td class="memItemLeft" align="right" valign="top"><a id="ad752f0d19b981ab68c5f72409052fa3d" name="ad752f0d19b981ab68c5f72409052fa3d"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_mouse.html#ad752f0d19b981ab68c5f72409052fa3d">Button</a> { <br />
 &#160;&#160;<b>Left</b> = sf::Mouse::Left
 , <b>Right</b> = sf::Mouse::Right
 , <b>Middle</b> = sf::Mouse::Middle
@@ -92,30 +97,206 @@ Public Types</h2></td></tr>
 &#160;&#160;<b>XButton2</b> = sf::Mouse::XButton2
 <br />
  }</td></tr>
+<tr class="memdesc:ad752f0d19b981ab68c5f72409052fa3d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_s_f_m_l_1_1_mouse.html" title="A encapsulation of sf::Mouse.">Mouse</a> buttons enumeration. <br /></td></tr>
 <tr class="separator:ad752f0d19b981ab68c5f72409052fa3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03eae723428c0594d264fa3557cbbe55"><td class="memItemLeft" align="right" valign="top"><a id="a03eae723428c0594d264fa3557cbbe55" name="a03eae723428c0594d264fa3557cbbe55"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Wheel</b> { <b>VerticalWheel</b> = sf::Mouse::VerticalWheel
+<tr class="memitem:a03eae723428c0594d264fa3557cbbe55"><td class="memItemLeft" align="right" valign="top"><a id="a03eae723428c0594d264fa3557cbbe55" name="a03eae723428c0594d264fa3557cbbe55"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_mouse.html#a03eae723428c0594d264fa3557cbbe55">Wheel</a> { <b>VerticalWheel</b> = sf::Mouse::VerticalWheel
 , <b>HorizontalWheel</b> = sf::Mouse::HorizontalWheel
  }</td></tr>
+<tr class="memdesc:a03eae723428c0594d264fa3557cbbe55"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_s_f_m_l_1_1_mouse.html" title="A encapsulation of sf::Mouse.">Mouse</a> wheel enumeration. <br /></td></tr>
 <tr class="separator:a03eae723428c0594d264fa3557cbbe55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aed665eaffb299d20d2e15b3e5b36ef94"><td class="memItemLeft" align="right" valign="top"><a id="aed665eaffb299d20d2e15b3e5b36ef94" name="aed665eaffb299d20d2e15b3e5b36ef94"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isButtonPressed</b> (Button button)</td></tr>
+<tr class="memitem:aed665eaffb299d20d2e15b3e5b36ef94"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_mouse.html#aed665eaffb299d20d2e15b3e5b36ef94">isButtonPressed</a> (<a class="el" href="class_s_f_m_l_1_1_mouse.html#ad752f0d19b981ab68c5f72409052fa3d">Button</a> button)</td></tr>
+<tr class="memdesc:aed665eaffb299d20d2e15b3e5b36ef94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a mouse button is pressed.  <br /></td></tr>
 <tr class="separator:aed665eaffb299d20d2e15b3e5b36ef94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0eefc29e9539bd55cd4b699dcb2380b4"><td class="memItemLeft" align="right" valign="top"><a id="a0eefc29e9539bd55cd4b699dcb2380b4" name="a0eefc29e9539bd55cd4b699dcb2380b4"></a>
-static <a class="el" href="class_s_f_m_l_1_1_vector2.html">Vector2i</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getDesktopPosition</b> ()</td></tr>
+<tr class="memitem:a0eefc29e9539bd55cd4b699dcb2380b4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_s_f_m_l_1_1_vector2.html">Vector2i</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_mouse.html#a0eefc29e9539bd55cd4b699dcb2380b4">getDesktopPosition</a> ()</td></tr>
+<tr class="memdesc:a0eefc29e9539bd55cd4b699dcb2380b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current position of the mouse.  <br /></td></tr>
 <tr class="separator:a0eefc29e9539bd55cd4b699dcb2380b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada4f7ac14b0588d18eb709868a0d421c"><td class="memItemLeft" align="right" valign="top"><a id="ada4f7ac14b0588d18eb709868a0d421c" name="ada4f7ac14b0588d18eb709868a0d421c"></a>
-static <a class="el" href="class_s_f_m_l_1_1_vector2.html">Vector2i</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getWindowPosition</b> (const std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_window.html">Window</a> &gt; &amp;window)</td></tr>
+<tr class="memitem:ada4f7ac14b0588d18eb709868a0d421c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_s_f_m_l_1_1_vector2.html">Vector2i</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_mouse.html#ada4f7ac14b0588d18eb709868a0d421c">getWindowPosition</a> (const std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_window.html">Window</a> &gt; &amp;window)</td></tr>
+<tr class="memdesc:ada4f7ac14b0588d18eb709868a0d421c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current position of the mouse relative to a window.  <br /></td></tr>
 <tr class="separator:ada4f7ac14b0588d18eb709868a0d421c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c617ddd9dc4f7561fa71e787b7278b9"><td class="memItemLeft" align="right" valign="top"><a id="a8c617ddd9dc4f7561fa71e787b7278b9" name="a8c617ddd9dc4f7561fa71e787b7278b9"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>setDesktopPosition</b> (const <a class="el" href="class_s_f_m_l_1_1_vector2.html">Vector2i</a> &amp;position)</td></tr>
+<tr class="memitem:a8c617ddd9dc4f7561fa71e787b7278b9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_mouse.html#a8c617ddd9dc4f7561fa71e787b7278b9">setDesktopPosition</a> (const <a class="el" href="class_s_f_m_l_1_1_vector2.html">Vector2i</a> &amp;position)</td></tr>
+<tr class="memdesc:a8c617ddd9dc4f7561fa71e787b7278b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current position of the mouse.  <br /></td></tr>
 <tr class="separator:a8c617ddd9dc4f7561fa71e787b7278b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae841f26210dda26c711311cdad363dc9"><td class="memItemLeft" align="right" valign="top"><a id="ae841f26210dda26c711311cdad363dc9" name="ae841f26210dda26c711311cdad363dc9"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>setWindowPosition</b> (const <a class="el" href="class_s_f_m_l_1_1_vector2.html">Vector2i</a> &amp;position, const std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_window.html">Window</a> &gt; &amp;window)</td></tr>
+<tr class="memitem:ae841f26210dda26c711311cdad363dc9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_mouse.html#ae841f26210dda26c711311cdad363dc9">setWindowPosition</a> (const <a class="el" href="class_s_f_m_l_1_1_vector2.html">Vector2i</a> &amp;position, const std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_window.html">Window</a> &gt; &amp;window)</td></tr>
+<tr class="memdesc:ae841f26210dda26c711311cdad363dc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current position of the mouse relative to a window.  <br /></td></tr>
 <tr class="separator:ae841f26210dda26c711311cdad363dc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A encapsulation of sf::Mouse. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0eefc29e9539bd55cd4b699dcb2380b4" name="a0eefc29e9539bd55cd4b699dcb2380b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eefc29e9539bd55cd4b699dcb2380b4">&#9670;&#160;</a></span>getDesktopPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_f_m_l_1_1_vector2.html">Vector2i</a> SFML::Mouse::getDesktopPosition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the current position of the mouse. </p>
+<dl class="section return"><dt>Returns</dt><dd>Vector2i The position of the mouse </dd></dl>
+
+</div>
+</div>
+<a id="ada4f7ac14b0588d18eb709868a0d421c" name="ada4f7ac14b0588d18eb709868a0d421c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada4f7ac14b0588d18eb709868a0d421c">&#9670;&#160;</a></span>getWindowPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_f_m_l_1_1_vector2.html">Vector2i</a> SFML::Mouse::getWindowPosition </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_window.html">Window</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the current position of the mouse relative to a window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>The window to get the position from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Vector2i The position of the mouse </dd></dl>
+
+</div>
+</div>
+<a id="aed665eaffb299d20d2e15b3e5b36ef94" name="aed665eaffb299d20d2e15b3e5b36ef94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed665eaffb299d20d2e15b3e5b36ef94">&#9670;&#160;</a></span>isButtonPressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SFML::Mouse::isButtonPressed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_s_f_m_l_1_1_mouse.html#ad752f0d19b981ab68c5f72409052fa3d">Mouse::Button</a>&#160;</td>
+          <td class="paramname"><em>button</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if a mouse button is pressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>true The button is pressed, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a8c617ddd9dc4f7561fa71e787b7278b9" name="a8c617ddd9dc4f7561fa71e787b7278b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c617ddd9dc4f7561fa71e787b7278b9">&#9670;&#160;</a></span>setDesktopPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SFML::Mouse::setDesktopPosition </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_s_f_m_l_1_1_vector2.html">Vector2i</a> &amp;&#160;</td>
+          <td class="paramname"><em>position</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the current position of the mouse. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>The new position of the mouse </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae841f26210dda26c711311cdad363dc9" name="ae841f26210dda26c711311cdad363dc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae841f26210dda26c711311cdad363dc9">&#9670;&#160;</a></span>setWindowPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SFML::Mouse::setWindowPosition </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_s_f_m_l_1_1_vector2.html">Vector2i</a> &amp;&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_window.html">Window</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>window</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the current position of the mouse relative to a window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>The new position of the mouse </td></tr>
+    <tr><td class="paramname">window</td><td>The window to set the position to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_mouse_8hpp_source.html">Mouse.hpp</a></li>
 <li>Mouse.cpp</li>

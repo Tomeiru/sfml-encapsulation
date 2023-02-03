@@ -79,16 +79,104 @@ $(function() {
   <div class="headertitle"><div class="title">SFML::SoundBufferManager Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A manager for sound_buffers.  
+ <a href="class_s_f_m_l_1_1_sound_buffer_manager.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_sound_buffer_manager_8hpp_source.html">SoundBufferManager.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4c678ed156bfdf49008a6e00221b3b7c"><td class="memItemLeft" align="right" valign="top"><a id="a4c678ed156bfdf49008a6e00221b3b7c" name="a4c678ed156bfdf49008a6e00221b3b7c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>registerSoundBuffer</b> (const std::string &amp;id, const std::string &amp;filename)</td></tr>
+<tr class="memitem:a4c678ed156bfdf49008a6e00221b3b7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_sound_buffer_manager.html#a4c678ed156bfdf49008a6e00221b3b7c">registerSoundBuffer</a> (const std::string &amp;id, const std::string &amp;filename)</td></tr>
+<tr class="memdesc:a4c678ed156bfdf49008a6e00221b3b7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a sound_buffer.  <br /></td></tr>
 <tr class="separator:a4c678ed156bfdf49008a6e00221b3b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e4ef1ba79ed182a834bb8142d5e2f69"><td class="memItemLeft" align="right" valign="top"><a id="a3e4ef1ba79ed182a834bb8142d5e2f69" name="a3e4ef1ba79ed182a834bb8142d5e2f69"></a>
-std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_sound_buffer.html">SoundBuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getSoundBuffer</b> (const std::string &amp;id)</td></tr>
+<tr class="memitem:a3e4ef1ba79ed182a834bb8142d5e2f69"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_sound_buffer.html">SoundBuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_sound_buffer_manager.html#a3e4ef1ba79ed182a834bb8142d5e2f69">getSoundBuffer</a> (const std::string &amp;id)</td></tr>
+<tr class="memdesc:a3e4ef1ba79ed182a834bb8142d5e2f69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a sound_buffer.  <br /></td></tr>
 <tr class="separator:a3e4ef1ba79ed182a834bb8142d5e2f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A manager for sound_buffers. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3e4ef1ba79ed182a834bb8142d5e2f69" name="a3e4ef1ba79ed182a834bb8142d5e2f69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e4ef1ba79ed182a834bb8142d5e2f69">&#9670;&#160;</a></span>getSoundBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_sound_buffer.html">SoundBuffer</a> &gt; SFML::SoundBufferManager::getSoundBuffer </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a sound_buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The ID of the sound_buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;SoundBuffer&gt; The sound_buffer </dd></dl>
+
+</div>
+</div>
+<a id="a4c678ed156bfdf49008a6e00221b3b7c" name="a4c678ed156bfdf49008a6e00221b3b7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c678ed156bfdf49008a6e00221b3b7c">&#9670;&#160;</a></span>registerSoundBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SFML::SoundBufferManager::registerSoundBuffer </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Register a sound_buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The ID of the sound_buffer </td></tr>
+    <tr><td class="paramname">filename</td><td>The path to the sound_buffer file </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_sound_buffer_manager_8hpp_source.html">SoundBufferManager.hpp</a></li>
 </ul>

@@ -80,51 +80,350 @@ $(function() {
   <div class="headertitle"><div class="title">SFML::Window Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A encapsulation of sf::RenderWindow.  
+ <a href="class_s_f_m_l_1_1_window.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_window_8hpp_source.html">Window.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a3dac015acbcaba4486b02ebee229380d"><td class="memItemLeft" align="right" valign="top"><a id="a3dac015acbcaba4486b02ebee229380d" name="a3dac015acbcaba4486b02ebee229380d"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Style</b> { <b>None</b> = sf::Style::None
+<tr class="memitem:a3dac015acbcaba4486b02ebee229380d"><td class="memItemLeft" align="right" valign="top"><a id="a3dac015acbcaba4486b02ebee229380d" name="a3dac015acbcaba4486b02ebee229380d"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_window.html#a3dac015acbcaba4486b02ebee229380d">Style</a> { <b>None</b> = sf::Style::None
 , <b>Default</b> = sf::Style::Default
 , <b>Fullscreen</b> = sf::Style::Fullscreen
  }</td></tr>
+<tr class="memdesc:a3dac015acbcaba4486b02ebee229380d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Style of the window enumeration. <br /></td></tr>
 <tr class="separator:a3dac015acbcaba4486b02ebee229380d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a532349448ac210959594c26c2a01ffb8"><td class="memItemLeft" align="right" valign="top"><a id="a532349448ac210959594c26c2a01ffb8" name="a532349448ac210959594c26c2a01ffb8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Window</b> (std::uint32_t width, std::uint32_t height, const std::string &amp;title, Style style=Default)</td></tr>
+<tr class="memitem:a532349448ac210959594c26c2a01ffb8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_window.html#a532349448ac210959594c26c2a01ffb8">Window</a> (std::uint32_t width, std::uint32_t height, const std::string &amp;title, <a class="el" href="class_s_f_m_l_1_1_window.html#a3dac015acbcaba4486b02ebee229380d">Style</a> style=Default)</td></tr>
+<tr class="memdesc:a532349448ac210959594c26c2a01ffb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="class_s_f_m_l_1_1_window.html" title="A encapsulation of sf::RenderWindow.">Window</a> object.  <br /></td></tr>
 <tr class="separator:a532349448ac210959594c26c2a01ffb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6f846c915d6ac2493c6ef51414ba667"><td class="memItemLeft" align="right" valign="top"><a id="ad6f846c915d6ac2493c6ef51414ba667" name="ad6f846c915d6ac2493c6ef51414ba667"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>display</b> ()</td></tr>
+<tr class="memdesc:ad6f846c915d6ac2493c6ef51414ba667"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the window. <br /></td></tr>
 <tr class="separator:ad6f846c915d6ac2493c6ef51414ba667"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad86e378c5715cf75372b4b3ba8e6b97c"><td class="memItemLeft" align="right" valign="top"><a id="ad86e378c5715cf75372b4b3ba8e6b97c" name="ad86e378c5715cf75372b4b3ba8e6b97c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isOpen</b> ()</td></tr>
+<tr class="memitem:ad86e378c5715cf75372b4b3ba8e6b97c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_window.html#ad86e378c5715cf75372b4b3ba8e6b97c">isOpen</a> ()</td></tr>
+<tr class="memdesc:ad86e378c5715cf75372b4b3ba8e6b97c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the window is open.  <br /></td></tr>
 <tr class="separator:ad86e378c5715cf75372b4b3ba8e6b97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60dac96f529ffc556bab10e26d22691b"><td class="memItemLeft" align="right" valign="top"><a id="a60dac96f529ffc556bab10e26d22691b" name="a60dac96f529ffc556bab10e26d22691b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>close</b> ()</td></tr>
+<tr class="memdesc:a60dac96f529ffc556bab10e26d22691b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the window. <br /></td></tr>
 <tr class="separator:a60dac96f529ffc556bab10e26d22691b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10bee3da02c2df66c1b33f72f99bc9fc"><td class="memItemLeft" align="right" valign="top"><a id="a10bee3da02c2df66c1b33f72f99bc9fc" name="a10bee3da02c2df66c1b33f72f99bc9fc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setIcon</b> (const std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_image.html">Image</a> &gt; &amp;image)</td></tr>
+<tr class="memitem:a10bee3da02c2df66c1b33f72f99bc9fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_window.html#a10bee3da02c2df66c1b33f72f99bc9fc">setIcon</a> (const std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_image.html">Image</a> &gt; &amp;image)</td></tr>
+<tr class="memdesc:a10bee3da02c2df66c1b33f72f99bc9fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the icon of the window.  <br /></td></tr>
 <tr class="separator:a10bee3da02c2df66c1b33f72f99bc9fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9ec65db6f0bb06d65c49fab5d2036e8"><td class="memItemLeft" align="right" valign="top"><a id="ac9ec65db6f0bb06d65c49fab5d2036e8" name="ac9ec65db6f0bb06d65c49fab5d2036e8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr>
+<tr class="memdesc:ac9ec65db6f0bb06d65c49fab5d2036e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the window. <br /></td></tr>
 <tr class="separator:ac9ec65db6f0bb06d65c49fab5d2036e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab75e1323c2dfcdf699a8cc323cabe670"><td class="memItemLeft" align="right" valign="top"><a id="ab75e1323c2dfcdf699a8cc323cabe670" name="ab75e1323c2dfcdf699a8cc323cabe670"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>drawSprite</b> (const std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_sprite.html">Sprite</a> &gt; &amp;sprite)</td></tr>
+<tr class="memitem:ab75e1323c2dfcdf699a8cc323cabe670"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_window.html#ab75e1323c2dfcdf699a8cc323cabe670">drawSprite</a> (const std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_sprite.html">Sprite</a> &gt; &amp;sprite)</td></tr>
+<tr class="memdesc:ab75e1323c2dfcdf699a8cc323cabe670"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a sprite on the window.  <br /></td></tr>
 <tr class="separator:ab75e1323c2dfcdf699a8cc323cabe670"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81a187ec549c8427c21db85263773a8b"><td class="memItemLeft" align="right" valign="top"><a id="a81a187ec549c8427c21db85263773a8b" name="a81a187ec549c8427c21db85263773a8b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>drawText</b> (const std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_text.html">Text</a> &gt; &amp;text)</td></tr>
+<tr class="memitem:a81a187ec549c8427c21db85263773a8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_window.html#a81a187ec549c8427c21db85263773a8b">drawText</a> (const std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_text.html">Text</a> &gt; &amp;text)</td></tr>
+<tr class="memdesc:a81a187ec549c8427c21db85263773a8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a text on the window.  <br /></td></tr>
 <tr class="separator:a81a187ec549c8427c21db85263773a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedb4d8db97e5ceb633fdf39d8a94f07b"><td class="memItemLeft" align="right" valign="top"><a id="aedb4d8db97e5ceb633fdf39d8a94f07b" name="aedb4d8db97e5ceb633fdf39d8a94f07b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>pollEvent</b> (<a class="el" href="class_s_f_m_l_1_1_event.html">SFML::Event</a> &amp;event)</td></tr>
+<tr class="memitem:aedb4d8db97e5ceb633fdf39d8a94f07b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_window.html#aedb4d8db97e5ceb633fdf39d8a94f07b">pollEvent</a> (<a class="el" href="class_s_f_m_l_1_1_event.html">SFML::Event</a> &amp;event)</td></tr>
+<tr class="memdesc:aedb4d8db97e5ceb633fdf39d8a94f07b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll an event from the window.  <br /></td></tr>
 <tr class="separator:aedb4d8db97e5ceb633fdf39d8a94f07b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40c5e9c124e30d9bd3543915e752c021"><td class="memItemLeft" align="right" valign="top"><a id="a40c5e9c124e30d9bd3543915e752c021" name="a40c5e9c124e30d9bd3543915e752c021"></a>
-const sf::RenderWindow &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getWindow</b> () const</td></tr>
+<tr class="memitem:a40c5e9c124e30d9bd3543915e752c021"><td class="memItemLeft" align="right" valign="top">const sf::RenderWindow &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_window.html#a40c5e9c124e30d9bd3543915e752c021">getWindow</a> () const</td></tr>
+<tr class="memdesc:a40c5e9c124e30d9bd3543915e752c021"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="class_s_f_m_l_1_1_window.html" title="A encapsulation of sf::RenderWindow.">Window</a> object.  <br /></td></tr>
 <tr class="separator:a40c5e9c124e30d9bd3543915e752c021"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb8093fa2249a2a48c8109413902b814"><td class="memItemLeft" align="right" valign="top"><a id="aeb8093fa2249a2a48c8109413902b814" name="aeb8093fa2249a2a48c8109413902b814"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setFramerateLimit</b> (std::uint32_t limit)</td></tr>
+<tr class="memitem:aeb8093fa2249a2a48c8109413902b814"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_m_l_1_1_window.html#aeb8093fa2249a2a48c8109413902b814">setFramerateLimit</a> (std::uint32_t limit)</td></tr>
+<tr class="memdesc:aeb8093fa2249a2a48c8109413902b814"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the framerate limit of the window.  <br /></td></tr>
 <tr class="separator:aeb8093fa2249a2a48c8109413902b814"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A encapsulation of sf::RenderWindow. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a532349448ac210959594c26c2a01ffb8" name="a532349448ac210959594c26c2a01ffb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a532349448ac210959594c26c2a01ffb8">&#9670;&#160;</a></span>Window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SFML::Window::Window </td>
+          <td>(</td>
+          <td class="paramtype">std::uint32_t&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::uint32_t&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>title</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_f_m_l_1_1_window.html#a3dac015acbcaba4486b02ebee229380d">Style</a>&#160;</td>
+          <td class="paramname"><em>style</em> = <code>Default</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a new <a class="el" href="class_s_f_m_l_1_1_window.html" title="A encapsulation of sf::RenderWindow.">Window</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>The width of the window </td></tr>
+    <tr><td class="paramname">height</td><td>The height of the window </td></tr>
+    <tr><td class="paramname">title</td><td>The title of the window </td></tr>
+    <tr><td class="paramname">style</td><td>The style of the window </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab75e1323c2dfcdf699a8cc323cabe670" name="ab75e1323c2dfcdf699a8cc323cabe670"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab75e1323c2dfcdf699a8cc323cabe670">&#9670;&#160;</a></span>drawSprite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SFML::Window::drawSprite </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_sprite.html">Sprite</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sprite</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Draw a sprite on the window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sprite</td><td>The sprite to draw </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a81a187ec549c8427c21db85263773a8b" name="a81a187ec549c8427c21db85263773a8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81a187ec549c8427c21db85263773a8b">&#9670;&#160;</a></span>drawText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SFML::Window::drawText </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_text.html">Text</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Draw a text on the window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>The text to draw </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a40c5e9c124e30d9bd3543915e752c021" name="a40c5e9c124e30d9bd3543915e752c021"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40c5e9c124e30d9bd3543915e752c021">&#9670;&#160;</a></span>getWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const sf::RenderWindow &amp; SFML::Window::getWindow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the <a class="el" href="class_s_f_m_l_1_1_window.html" title="A encapsulation of sf::RenderWindow.">Window</a> object. </p>
+<dl class="section return"><dt>Returns</dt><dd>const sf::RenderWindow&amp; The window </dd></dl>
+
+</div>
+</div>
+<a id="ad86e378c5715cf75372b4b3ba8e6b97c" name="ad86e378c5715cf75372b4b3ba8e6b97c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad86e378c5715cf75372b4b3ba8e6b97c">&#9670;&#160;</a></span>isOpen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SFML::Window::isOpen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if the window is open. </p>
+<dl class="section return"><dt>Returns</dt><dd>true The window is open, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="aedb4d8db97e5ceb633fdf39d8a94f07b" name="aedb4d8db97e5ceb633fdf39d8a94f07b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedb4d8db97e5ceb633fdf39d8a94f07b">&#9670;&#160;</a></span>pollEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SFML::Window::pollEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_s_f_m_l_1_1_event.html">SFML::Event</a> &amp;&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Poll an event from the window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>The event to poll </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true The event is empty, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="aeb8093fa2249a2a48c8109413902b814" name="aeb8093fa2249a2a48c8109413902b814"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb8093fa2249a2a48c8109413902b814">&#9670;&#160;</a></span>setFramerateLimit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SFML::Window::setFramerateLimit </td>
+          <td>(</td>
+          <td class="paramtype">std::uint32_t&#160;</td>
+          <td class="paramname"><em>limit</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the framerate limit of the window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">limit</td><td>The framerate limit </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a10bee3da02c2df66c1b33f72f99bc9fc" name="a10bee3da02c2df66c1b33f72f99bc9fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10bee3da02c2df66c1b33f72f99bc9fc">&#9670;&#160;</a></span>setIcon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SFML::Window::setIcon </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_1_1_image.html">Image</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>image</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the icon of the window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>The image to set as the icon </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_window_8hpp_source.html">Window.hpp</a></li>
 </ul>
