@@ -123,6 +123,15 @@ public:
     {
         window.setFramerateLimit(limit);
     }
+    /**
+     * @brief Check if the window has focus
+     *
+     * @return true The window has focus, false otherwise
+     */
+    bool hasFocus() const
+    {
+        return window.hasFocus();
+    }
 
 private:
     sf::RenderWindow window;
