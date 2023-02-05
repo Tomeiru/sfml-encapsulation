@@ -74,80 +74,93 @@ $(function() {
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;RuntimeException.hpp&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;SFML/Audio/Music.hpp&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;RuntimeException.hpp&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span>SFML {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_s_f_m_l_1_1_music.html">   11</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_s_f_m_l_1_1_music.html">Music</a> {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_s_f_m_l_1_1_music.html#a1b3e108ea1f57b1aa6e60214a5180a6f">   16</a></span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_s_f_m_l_1_1_music.html#a1b3e108ea1f57b1aa6e60214a5180a6f">Status</a> {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            Stopped = sf::Music::Stopped,</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            Paused = sf::Music::Paused,</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            Playing = sf::Music::Playing</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        };</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_s_f_m_l_1_1_music.html#aaeddece4c6f533073cd85dbdbb8bf778">   29</a></span>        <a class="code hl_function" href="class_s_f_m_l_1_1_music.html#aaeddece4c6f533073cd85dbdbb8bf778">Music</a>(<span class="keyword">const</span> std::string &amp;filename, <span class="keywordtype">float</span> volume = 100, <span class="keywordtype">bool</span> is_looping = <span class="keyword">true</span>, <a class="code hl_enumeration" href="class_s_f_m_l_1_1_music.html#a1b3e108ea1f57b1aa6e60214a5180a6f">Status</a> status = Stopped) : music(), _is_looping(is_looping), status(status) {</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <span class="keywordflow">if</span> (!music.openFromFile(filename))</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                <span class="keywordflow">throw</span> <a class="code hl_class" href="class_s_f_m_l_1_1_runtime_exception.html">RuntimeException</a>(<span class="stringliteral">&quot;Music::ctor&quot;</span>, <span class="stringliteral">&quot;music.openFromFile failed, filename must be invalid&quot;</span>);</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="keywordflow">if</span> (volume &gt; 100)</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                volume = 100;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <span class="keywordflow">if</span> (volume &lt; 0)</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                volume = 0;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            _volume = volume;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            music.setVolume(_volume);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            music.setLoop(is_looping);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        }</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_s_f_m_l_1_1_music.html#ace9694dd85bbb61b0e624898950f0564">   45</a></span>        <span class="keyword">const</span> sf::Music &amp;<a class="code hl_function" href="class_s_f_m_l_1_1_music.html#ace9694dd85bbb61b0e624898950f0564">getMusic</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <span class="keywordflow">return</span> music;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        }</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_s_f_m_l_1_1_music.html#a9170e3031cb09d65d7f4aaf361fa32fd">   51</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_f_m_l_1_1_music.html#a9170e3031cb09d65d7f4aaf361fa32fd">play</a>() {</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            music.play();</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            status = Playing;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        }</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_s_f_m_l_1_1_music.html#a0f930cc3fbabb7a111edf9dfad73d91c">   58</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_f_m_l_1_1_music.html#a0f930cc3fbabb7a111edf9dfad73d91c">pause</a>() {</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            music.pause();</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            status = Paused;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        }</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_s_f_m_l_1_1_music.html#a72faa8dd9273c9e4e725eee727b84f98">   65</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_f_m_l_1_1_music.html#a72faa8dd9273c9e4e725eee727b84f98">stop</a>() {</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            music.stop();</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            status = Stopped;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        }</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="class_s_f_m_l_1_1_music.html#a5be4e3318362d5e27a9d83b6f38fa514">   74</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_f_m_l_1_1_music.html#a5be4e3318362d5e27a9d83b6f38fa514">setVolume</a>(<span class="keywordtype">float</span> volume) {</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordflow">if</span> (volume &gt; 100)</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                volume = 100;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <span class="keywordflow">if</span> (volume &lt; 0)</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                volume = 0;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            music.setVolume(volume);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            _volume = volume;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        }</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="class_s_f_m_l_1_1_music.html#a105b66d307deee2eda61272da70e89db">   87</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_f_m_l_1_1_music.html#a105b66d307deee2eda61272da70e89db">setLoop</a>(<span class="keywordtype">bool</span> is_looping) {</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            music.setLoop(is_looping);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            _is_looping = is_looping;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        }</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="class_s_f_m_l_1_1_music.html#a0a31bc4abda6998c6a05d5fc24c6aa82">   94</a></span>        <span class="keyword">const</span> <a class="code hl_enumeration" href="class_s_f_m_l_1_1_music.html#a1b3e108ea1f57b1aa6e60214a5180a6f">Status</a> &amp;<a class="code hl_function" href="class_s_f_m_l_1_1_music.html#a0a31bc4abda6998c6a05d5fc24c6aa82">getStatus</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <span class="keywordflow">return</span> (status);</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        };</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="class_s_f_m_l_1_1_music.html#ac0cf1e6125c138f22e1c8cd4628e2a88">  100</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_f_m_l_1_1_music.html#ac0cf1e6125c138f22e1c8cd4628e2a88">updateStatus</a>() {</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            status = (<a class="code hl_enumeration" href="class_s_f_m_l_1_1_music.html#a1b3e108ea1f57b1aa6e60214a5180a6f">Status</a>)music.getStatus();</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        }</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <span class="keywordtype">float</span> _volume;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <span class="keywordtype">bool</span> _is_looping;</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        sf::Music music;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <a class="code hl_enumeration" href="class_s_f_m_l_1_1_music.html#a1b3e108ea1f57b1aa6e60214a5180a6f">Status</a> status;</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    };</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>}</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_s_f_m_l_1_1_music.html">   11</a></span><span class="keyword">class </span><a class="code hl_class" href="class_s_f_m_l_1_1_music.html">Music</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_s_f_m_l_1_1_music.html#a1b3e108ea1f57b1aa6e60214a5180a6f">   16</a></span>    <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_s_f_m_l_1_1_music.html#a1b3e108ea1f57b1aa6e60214a5180a6f">Status</a> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        Stopped = sf::Music::Stopped,</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        Paused = sf::Music::Paused,</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        Playing = sf::Music::Playing</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    };</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_s_f_m_l_1_1_music.html#aaeddece4c6f533073cd85dbdbb8bf778">   29</a></span>    <a class="code hl_function" href="class_s_f_m_l_1_1_music.html#aaeddece4c6f533073cd85dbdbb8bf778">Music</a>(<span class="keyword">const</span> std::string&amp; filename, <span class="keywordtype">float</span> volume = 100, <span class="keywordtype">bool</span> is_looping = <span class="keyword">true</span>, <a class="code hl_enumeration" href="class_s_f_m_l_1_1_music.html#a1b3e108ea1f57b1aa6e60214a5180a6f">Status</a> status = Stopped)</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        : music()</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        , _is_looping(is_looping)</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        , status(status)</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keywordflow">if</span> (!music.openFromFile(filename))</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <span class="keywordflow">throw</span> <a class="code hl_class" href="class_s_f_m_l_1_1_runtime_exception.html">RuntimeException</a>(<span class="stringliteral">&quot;Music::ctor&quot;</span>, <span class="stringliteral">&quot;music.openFromFile failed, filename must be invalid&quot;</span>);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordflow">if</span> (volume &gt; 100)</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            volume = 100;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordflow">if</span> (volume &lt; 0)</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            volume = 0;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        _volume = volume;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        music.setVolume(_volume);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        music.setLoop(is_looping);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_s_f_m_l_1_1_music.html#ace9694dd85bbb61b0e624898950f0564">   49</a></span>    <span class="keyword">const</span> sf::Music&amp; <a class="code hl_function" href="class_s_f_m_l_1_1_music.html#ace9694dd85bbb61b0e624898950f0564">getMusic</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">return</span> music;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="class_s_f_m_l_1_1_music.html#a9170e3031cb09d65d7f4aaf361fa32fd">   56</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_f_m_l_1_1_music.html#a9170e3031cb09d65d7f4aaf361fa32fd">play</a>()</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        music.play();</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        status = Playing;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_s_f_m_l_1_1_music.html#a0f930cc3fbabb7a111edf9dfad73d91c">   64</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_f_m_l_1_1_music.html#a0f930cc3fbabb7a111edf9dfad73d91c">pause</a>()</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        music.pause();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        status = Paused;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="class_s_f_m_l_1_1_music.html#a72faa8dd9273c9e4e725eee727b84f98">   72</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_f_m_l_1_1_music.html#a72faa8dd9273c9e4e725eee727b84f98">stop</a>()</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        music.stop();</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        status = Stopped;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="class_s_f_m_l_1_1_music.html#a5be4e3318362d5e27a9d83b6f38fa514">   82</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_f_m_l_1_1_music.html#a5be4e3318362d5e27a9d83b6f38fa514">setVolume</a>(<span class="keywordtype">float</span> volume)</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordflow">if</span> (volume &gt; 100)</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            volume = 100;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordflow">if</span> (volume &lt; 0)</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            volume = 0;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        music.setVolume(volume);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        _volume = volume;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    }</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="class_s_f_m_l_1_1_music.html#a105b66d307deee2eda61272da70e89db">   96</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_f_m_l_1_1_music.html#a105b66d307deee2eda61272da70e89db">setLoop</a>(<span class="keywordtype">bool</span> is_looping)</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        music.setLoop(is_looping);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        _is_looping = is_looping;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="class_s_f_m_l_1_1_music.html#a0a31bc4abda6998c6a05d5fc24c6aa82">  104</a></span>    <span class="keyword">const</span> <a class="code hl_enumeration" href="class_s_f_m_l_1_1_music.html#a1b3e108ea1f57b1aa6e60214a5180a6f">Status</a>&amp; <a class="code hl_function" href="class_s_f_m_l_1_1_music.html#a0a31bc4abda6998c6a05d5fc24c6aa82">getStatus</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="keywordflow">return</span> (status);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    };</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="class_s_f_m_l_1_1_music.html#ac0cf1e6125c138f22e1c8cd4628e2a88">  111</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_f_m_l_1_1_music.html#ac0cf1e6125c138f22e1c8cd4628e2a88">updateStatus</a>()</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        status = (<a class="code hl_enumeration" href="class_s_f_m_l_1_1_music.html#a1b3e108ea1f57b1aa6e60214a5180a6f">Status</a>)music.getStatus();</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    }</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordtype">float</span> _volume;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keywordtype">bool</span> _is_looping;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    sf::Music music;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <a class="code hl_enumeration" href="class_s_f_m_l_1_1_music.html#a1b3e108ea1f57b1aa6e60214a5180a6f">Status</a> status;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>};</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>}</div>
 <div class="ttc" id="aclass_s_f_m_l_1_1_music_html"><div class="ttname"><a href="class_s_f_m_l_1_1_music.html">SFML::Music</a></div><div class="ttdoc">A encapsulation of sf::Music.</div><div class="ttdef"><b>Definition:</b> Music.hpp:11</div></div>
-<div class="ttc" id="aclass_s_f_m_l_1_1_music_html_a0a31bc4abda6998c6a05d5fc24c6aa82"><div class="ttname"><a href="class_s_f_m_l_1_1_music.html#a0a31bc4abda6998c6a05d5fc24c6aa82">SFML::Music::getStatus</a></div><div class="ttdeci">const Status &amp; getStatus() const</div><div class="ttdoc">Get the status of the music.</div><div class="ttdef"><b>Definition:</b> Music.hpp:94</div></div>
-<div class="ttc" id="aclass_s_f_m_l_1_1_music_html_a0f930cc3fbabb7a111edf9dfad73d91c"><div class="ttname"><a href="class_s_f_m_l_1_1_music.html#a0f930cc3fbabb7a111edf9dfad73d91c">SFML::Music::pause</a></div><div class="ttdeci">void pause()</div><div class="ttdoc">Pause the music.</div><div class="ttdef"><b>Definition:</b> Music.hpp:58</div></div>
-<div class="ttc" id="aclass_s_f_m_l_1_1_music_html_a105b66d307deee2eda61272da70e89db"><div class="ttname"><a href="class_s_f_m_l_1_1_music.html#a105b66d307deee2eda61272da70e89db">SFML::Music::setLoop</a></div><div class="ttdeci">void setLoop(bool is_looping)</div><div class="ttdoc">Make the music loop.</div><div class="ttdef"><b>Definition:</b> Music.hpp:87</div></div>
+<div class="ttc" id="aclass_s_f_m_l_1_1_music_html_a0a31bc4abda6998c6a05d5fc24c6aa82"><div class="ttname"><a href="class_s_f_m_l_1_1_music.html#a0a31bc4abda6998c6a05d5fc24c6aa82">SFML::Music::getStatus</a></div><div class="ttdeci">const Status &amp; getStatus() const</div><div class="ttdoc">Get the status of the music.</div><div class="ttdef"><b>Definition:</b> Music.hpp:104</div></div>
+<div class="ttc" id="aclass_s_f_m_l_1_1_music_html_a0f930cc3fbabb7a111edf9dfad73d91c"><div class="ttname"><a href="class_s_f_m_l_1_1_music.html#a0f930cc3fbabb7a111edf9dfad73d91c">SFML::Music::pause</a></div><div class="ttdeci">void pause()</div><div class="ttdoc">Pause the music.</div><div class="ttdef"><b>Definition:</b> Music.hpp:64</div></div>
+<div class="ttc" id="aclass_s_f_m_l_1_1_music_html_a105b66d307deee2eda61272da70e89db"><div class="ttname"><a href="class_s_f_m_l_1_1_music.html#a105b66d307deee2eda61272da70e89db">SFML::Music::setLoop</a></div><div class="ttdeci">void setLoop(bool is_looping)</div><div class="ttdoc">Make the music loop.</div><div class="ttdef"><b>Definition:</b> Music.hpp:96</div></div>
 <div class="ttc" id="aclass_s_f_m_l_1_1_music_html_a1b3e108ea1f57b1aa6e60214a5180a6f"><div class="ttname"><a href="class_s_f_m_l_1_1_music.html#a1b3e108ea1f57b1aa6e60214a5180a6f">SFML::Music::Status</a></div><div class="ttdeci">Status</div><div class="ttdoc">Music status enumeration.</div><div class="ttdef"><b>Definition:</b> Music.hpp:16</div></div>
-<div class="ttc" id="aclass_s_f_m_l_1_1_music_html_a5be4e3318362d5e27a9d83b6f38fa514"><div class="ttname"><a href="class_s_f_m_l_1_1_music.html#a5be4e3318362d5e27a9d83b6f38fa514">SFML::Music::setVolume</a></div><div class="ttdeci">void setVolume(float volume)</div><div class="ttdoc">Get the volume of the music.</div><div class="ttdef"><b>Definition:</b> Music.hpp:74</div></div>
-<div class="ttc" id="aclass_s_f_m_l_1_1_music_html_a72faa8dd9273c9e4e725eee727b84f98"><div class="ttname"><a href="class_s_f_m_l_1_1_music.html#a72faa8dd9273c9e4e725eee727b84f98">SFML::Music::stop</a></div><div class="ttdeci">void stop()</div><div class="ttdoc">Stop the music.</div><div class="ttdef"><b>Definition:</b> Music.hpp:65</div></div>
-<div class="ttc" id="aclass_s_f_m_l_1_1_music_html_a9170e3031cb09d65d7f4aaf361fa32fd"><div class="ttname"><a href="class_s_f_m_l_1_1_music.html#a9170e3031cb09d65d7f4aaf361fa32fd">SFML::Music::play</a></div><div class="ttdeci">void play()</div><div class="ttdoc">Play the music.</div><div class="ttdef"><b>Definition:</b> Music.hpp:51</div></div>
+<div class="ttc" id="aclass_s_f_m_l_1_1_music_html_a5be4e3318362d5e27a9d83b6f38fa514"><div class="ttname"><a href="class_s_f_m_l_1_1_music.html#a5be4e3318362d5e27a9d83b6f38fa514">SFML::Music::setVolume</a></div><div class="ttdeci">void setVolume(float volume)</div><div class="ttdoc">Get the volume of the music.</div><div class="ttdef"><b>Definition:</b> Music.hpp:82</div></div>
+<div class="ttc" id="aclass_s_f_m_l_1_1_music_html_a72faa8dd9273c9e4e725eee727b84f98"><div class="ttname"><a href="class_s_f_m_l_1_1_music.html#a72faa8dd9273c9e4e725eee727b84f98">SFML::Music::stop</a></div><div class="ttdeci">void stop()</div><div class="ttdoc">Stop the music.</div><div class="ttdef"><b>Definition:</b> Music.hpp:72</div></div>
+<div class="ttc" id="aclass_s_f_m_l_1_1_music_html_a9170e3031cb09d65d7f4aaf361fa32fd"><div class="ttname"><a href="class_s_f_m_l_1_1_music.html#a9170e3031cb09d65d7f4aaf361fa32fd">SFML::Music::play</a></div><div class="ttdeci">void play()</div><div class="ttdoc">Play the music.</div><div class="ttdef"><b>Definition:</b> Music.hpp:56</div></div>
 <div class="ttc" id="aclass_s_f_m_l_1_1_music_html_aaeddece4c6f533073cd85dbdbb8bf778"><div class="ttname"><a href="class_s_f_m_l_1_1_music.html#aaeddece4c6f533073cd85dbdbb8bf778">SFML::Music::Music</a></div><div class="ttdeci">Music(const std::string &amp;filename, float volume=100, bool is_looping=true, Status status=Stopped)</div><div class="ttdoc">Construct a new Music object.</div><div class="ttdef"><b>Definition:</b> Music.hpp:29</div></div>
-<div class="ttc" id="aclass_s_f_m_l_1_1_music_html_ac0cf1e6125c138f22e1c8cd4628e2a88"><div class="ttname"><a href="class_s_f_m_l_1_1_music.html#ac0cf1e6125c138f22e1c8cd4628e2a88">SFML::Music::updateStatus</a></div><div class="ttdeci">void updateStatus()</div><div class="ttdoc">Update the status of the music.</div><div class="ttdef"><b>Definition:</b> Music.hpp:100</div></div>
-<div class="ttc" id="aclass_s_f_m_l_1_1_music_html_ace9694dd85bbb61b0e624898950f0564"><div class="ttname"><a href="class_s_f_m_l_1_1_music.html#ace9694dd85bbb61b0e624898950f0564">SFML::Music::getMusic</a></div><div class="ttdeci">const sf::Music &amp; getMusic() const</div><div class="ttdoc">Get the Music object.</div><div class="ttdef"><b>Definition:</b> Music.hpp:45</div></div>
+<div class="ttc" id="aclass_s_f_m_l_1_1_music_html_ac0cf1e6125c138f22e1c8cd4628e2a88"><div class="ttname"><a href="class_s_f_m_l_1_1_music.html#ac0cf1e6125c138f22e1c8cd4628e2a88">SFML::Music::updateStatus</a></div><div class="ttdeci">void updateStatus()</div><div class="ttdoc">Update the status of the music.</div><div class="ttdef"><b>Definition:</b> Music.hpp:111</div></div>
+<div class="ttc" id="aclass_s_f_m_l_1_1_music_html_ace9694dd85bbb61b0e624898950f0564"><div class="ttname"><a href="class_s_f_m_l_1_1_music.html#ace9694dd85bbb61b0e624898950f0564">SFML::Music::getMusic</a></div><div class="ttdeci">const sf::Music &amp; getMusic() const</div><div class="ttdoc">Get the Music object.</div><div class="ttdef"><b>Definition:</b> Music.hpp:49</div></div>
 <div class="ttc" id="aclass_s_f_m_l_1_1_runtime_exception_html"><div class="ttname"><a href="class_s_f_m_l_1_1_runtime_exception.html">SFML::RuntimeException</a></div><div class="ttdoc">A runtime exception.</div><div class="ttdef"><b>Definition:</b> RuntimeException.hpp:10</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
