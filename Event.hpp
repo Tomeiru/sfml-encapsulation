@@ -181,9 +181,15 @@ namespace SFML {
             std::uint32_t joystickId;
             std::uint32_t button;
         };
-        
+
         /**
-         * @brief Construct a new Event class
+        * @brief Construct a new Event class
+        */
+        Event() : _event() {};
+
+        /**
+         * @brief Construct a new Event class from a sf::Event
+         * @param event The sf::Event the encapsulation is build around
          */
         Event(const sf::Event &event) : _event(event) {};
         /**
