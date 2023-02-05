@@ -1,7 +1,11 @@
 var searchData=
 [
-  ['udpsocket_0',['UDPSocket',['../class_s_f_m_l_1_1_u_d_p_socket.html',1,'SFML::UDPSocket'],['../class_s_f_m_l_1_1_u_d_p_socket.html#a482ceb33ce4331feb04015afbd30f0af',1,'SFML::UDPSocket::UDPSocket()']]],
-  ['unbind_1',['unbind',['../class_s_f_m_l_1_1_u_d_p_socket.html#a370fe7ec387a30e166b9314753d8b758',1,'SFML::UDPSocket']]],
-  ['update_2',['update',['../class_s_f_m_l_1_1_joystick.html#a56353dfe746e5660c979702843ea5de1',1,'SFML::Joystick']]],
-  ['updatestatus_3',['updateStatus',['../class_s_f_m_l_1_1_music.html#ac0cf1e6125c138f22e1c8cd4628e2a88',1,'SFML::Music::updateStatus()'],['../class_s_f_m_l_1_1_sound.html#a93b2b5372df21cc540bc352c91ea7d61',1,'SFML::Sound::updateStatus()']]]
+  ['text_0',['Text',['../class_s_f_m_l_1_1_text.html',1,'SFML::Text'],['../class_s_f_m_l_1_1_text.html#a29cd42e341a54d11efaf9af8d4aa1b44',1,'SFML::Text::Text()']]],
+  ['textevent_1',['TextEvent',['../struct_s_f_m_l_1_1_event_1_1_text_event.html',1,'SFML::Event::TextEvent'],['../struct_s_f_m_l_1_1_event_1_1_text_event.html#a3b43be063f0569156355decfa778ddee',1,'SFML::Event::TextEvent::TextEvent()']]],
+  ['textmanager_2',['TextManager',['../class_s_f_m_l_1_1_text_manager.html',1,'SFML']]],
+  ['texture_3',['Texture',['../class_s_f_m_l_1_1_texture.html',1,'SFML::Texture'],['../class_s_f_m_l_1_1_texture.html#a4e3f0a0807ce58d2e8f8927bc31c5cb1',1,'SFML::Texture::Texture()']]],
+  ['texturemanager_4',['TextureManager',['../class_s_f_m_l_1_1_texture_manager.html',1,'SFML']]],
+  ['time_5',['Time',['../class_s_f_m_l_1_1_time.html',1,'SFML::Time'],['../class_s_f_m_l_1_1_time.html#aba52326197b7bf3cf25cfb51a59da992',1,'SFML::Time::Time()']]],
+  ['tointeger_6',['toInteger',['../class_s_f_m_l_1_1_ip_address.html#a20b8a95e9b46c406032300e69ce877d3',1,'SFML::IpAddress']]],
+  ['tostring_7',['toString',['../class_s_f_m_l_1_1_ip_address.html#a218369a62e071760044e6ff560d71fc9',1,'SFML::IpAddress']]]
 ];

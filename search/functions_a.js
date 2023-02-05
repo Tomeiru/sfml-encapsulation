@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['localhost_0',['localhost',['../class_s_f_m_l_1_1_ip_address.html#a1b173bc172450ca7442b3bc8d22b60c4',1,'SFML::IpAddress']]]
+  ['keyevent_0',['KeyEvent',['../struct_s_f_m_l_1_1_event_1_1_key_event.html#a9ec0cad9ae077d0e258c50b3f7f9b467',1,'SFML::Event::KeyEvent']]]
 ];
