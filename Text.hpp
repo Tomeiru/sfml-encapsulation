@@ -2,9 +2,9 @@
 
 #include "Color.hpp"
 #include "Font.hpp"
+#include "Rect.hpp"
 #include "SFML/Graphics/Text.hpp"
 #include "Vector2.hpp"
-#include "Rect.hpp"
 #include <memory>
 #include <string>
 
@@ -125,7 +125,6 @@ public:
     {
         return (text.getGlobalBounds());
     }
-
 
 private:
     sf::Text text;
