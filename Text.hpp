@@ -4,6 +4,7 @@
 #include "Font.hpp"
 #include "SFML/Graphics/Text.hpp"
 #include "Vector2.hpp"
+#include "Rect.hpp"
 #include <memory>
 #include <string>
 
@@ -115,6 +116,16 @@ public:
     {
         text.setOutlineThickness(thickness);
     }
+    /**
+     * @brief Get the global bounds of the text
+     *
+     * @return sf::FloatRect The global bounds of the text
+     */
+    FloatRect getGlobalBounds() const
+    {
+        return (text.getGlobalBounds());
+    }
+
 
 private:
     sf::Text text;
