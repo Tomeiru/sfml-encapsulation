@@ -8,7 +8,7 @@ var searchData=
   ['geteventtype_5',['getEventType',['../class_s_f_m_l_1_1_event.html#a62e9f01824f1d9a511e83aacae267551',1,'SFML::Event']]],
   ['getfont_6',['getFont',['../class_s_f_m_l_1_1_font.html#a00e7d016366a3b36385564c956de3cb8',1,'SFML::Font::getFont()'],['../class_s_f_m_l_1_1_font_manager.html#ab00e47aae042807391696934839c79bd',1,'SFML::FontManager::getFont()']]],
   ['getgamepadevents_7',['getGamepadEvents',['../class_s_f_m_l_1_1_event_manager.html#ac649c5c7b5d8b870878eaf52690af20f',1,'SFML::EventManager']]],
-  ['getglobalbounds_8',['getGlobalBounds',['../class_s_f_m_l_1_1_sprite.html#a12a8ad43ce9199330b6ebeab885fcb81',1,'SFML::Sprite']]],
+  ['getglobalbounds_8',['getGlobalBounds',['../class_s_f_m_l_1_1_sprite.html#a12a8ad43ce9199330b6ebeab885fcb81',1,'SFML::Sprite::getGlobalBounds()'],['../class_s_f_m_l_1_1_text.html#ab447b73f79c49cd34fba919db5325b5b',1,'SFML::Text::getGlobalBounds()']]],
   ['getheight_9',['getHeight',['../class_s_f_m_l_1_1_image.html#a4f9bebf198ebe876a5a1ae414077cd08',1,'SFML::Image']]],
   ['getimage_10',['getImage',['../class_s_f_m_l_1_1_image_manager.html#a070ab0d86dcf7708f0358e4e46141382',1,'SFML::ImageManager']]],
   ['getipadress_11',['getIpAdress',['../class_s_f_m_l_1_1_ip_address.html#ab8451d2f0d1505baa152d84331a04cf1',1,'SFML::IpAddress']]],
